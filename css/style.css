@@ -140,13 +140,15 @@ body{
 
 /* BACKGROUND */
 .page{
-    padding: 30px 0;
+    padding: 30px;
     width: 100%;
+    min-height: calc(100vh - 420px);
     position: relative;
 }
 .page__background{
     position: absolute;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -158,7 +160,6 @@ body{
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
-    padding: 30px;
     justify-content: center;
     padding-top: 80px;
 }
@@ -217,24 +218,18 @@ body{
     justify-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 30px 50px 30px;
+    padding-bottom: 50px;
 }
 .ageGroups{
     z-index: 3;
 }
 .ageGroups__background{
+    top:30px;
+    padding: 0 30px;
     width: 100%;
     position: absolute;
-    top:30px;
+    right: 0;
     z-index: 1;
-}
-.ageGroups__blur{
-    z-index: 2;
-    background: #ccc;
-    position: absolute;
-    display: grid;
-    height: 300px;
-    width: 350px;
 }
 .rama{
     position: relative;
@@ -286,6 +281,7 @@ body{
 /* BE SCOUT */
 .beScoutSection{
     z-index:1;
+    margin: 0 -30px;
     display: flex;
     flex-flow: row wrap;
     color: white;
@@ -318,9 +314,7 @@ body{
 .contactHome{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    width: 100%;
-    z-index: 1;
+    margin: 50px -30px;
     color: white;
     background: rgb(34,34,34,0.5);
     backdrop-filter: blur(20px);
@@ -345,6 +339,88 @@ body{
     margin-top: 30px
 }
 
+/* EVENTS */
+.calendar{
+    position: relative;
+    width: calc(100% - 40px);
+    height: 600px;
+    margin: 20px;
+    padding: 40px;
+    
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* CONTACT */
+.contentBox--flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.contentBox a{
+    color:white;
+    text-decoration: none;
+}
+.form{
+    width: 100%;
+}
+form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__field{
+    width: 100%;
+    padding: 10px 0 5px 10px;
+    text-align: left;
+}
+.form__field label{
+    width: 100%;
+    padding-left:5px;
+}
+.form__field input{
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+
+    color: #C4C4C4;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.form__field textarea{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+
+    color: #C4C4C4;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 15px;
+}
+.mapContact{
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+}
+.contactSocial{
+    margin-top: 10px; 
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.contactSocial__icons{
+    display: flex;
+    flex-direction: row; 
+    height: 50px;
+}
 /* MEDIA QUERIES */
 @media all and (min-width: 480px){
     .ageGroups,
@@ -355,7 +431,13 @@ body{
     .backCircle{
         height: calc((100vw - 60px)/2);
     }
-    
+    .contactSocial{
+        display: grid;
+        grid-template-areas: "icon ." "icon .";
+    }
+    .contactSocial__icons{
+        grid-area: icon;
+    }
 }
 @media all and (min-width: 768px){
     .ageGroups,
@@ -372,17 +454,67 @@ body{
     .contactHome{
     display: grid;
     grid-template-areas: "title map" ". map" ". map" "address map";
-}
+    }
+    .contactHome__title{
+        grid-area: title;
+    }
+    .contactHome__address{
+        grid-area: address;
+    }
+    .contactHome iframe{
+        grid-area: map;
+    }
+    .contentBox--flex{
+    display: flex;
+    flex-flow: row wrap;
+    }
+    .form{
+        width: 50%;
+    }
+    form{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: ". ." ". ." "msg msg" "sub sub";
+    }
+    .form__field{
+        width: 100%;
+        padding: 10px 0 5px 10px;
+        text-align: left;
+    }
+    .form__field label{
+        width: 100%;
+        padding-left:5px;
+    }
+    .form__field input{
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
 
-.contactHome__title{
-    grid-area: title;
-}
-.contactHome__address{
-    grid-area: address;
-}
-.contactHome iframe{
-    grid-area: map;
-}
+        color: #C4C4C4;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+    }
+    .form__field--msg{
+        grid-area: msg;
+    }
+    .form__field textarea{
+        display: inline-block;
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+
+        color: #C4C4C4;
+        font-size: 16px;
+        background-color: #f5f5f5;
+        border: none;
+        border-radius: 15px;
+    }
+    .contentBox--flex__column{
+        width: 48%
+    }
 }
 @media all and (min-width: 1024px){
     .ageGroups,
