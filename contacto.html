@@ -3,20 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto | GSNSF</title>
+    <title>Nuestra Historia | GSNSF</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
     <!--- Header --->
     <div class="header">
         <!--- Logo --->
-        <div class="header__logoDiv">
+        <div class="header__logoDiv animate__animated animate__slideInDown">
             <a href="index.html"><img class="header__logoImg" src="assets/img/logo.png" alt="Logo"></a>
         </div>
 
         <!--- Nav Menu --->
-        <div class="header__menu">
+        <div class="header__menu animate__animated animate__slideInDown">
             <ul>
                 <li class="header__menu">
                     <a href="index.html">Home</a></li>
@@ -32,7 +33,7 @@
         </div>
 
         <!--- My Account button --->
-        <div class="header__btn btn"><a href="">Mi cuenta</a></div>
+        <div class="header__btn btn animate__animated animate__slideInDown"><a href="">Mi cuenta</a></div>
     </div>
     <!--- End Header --->
 
@@ -40,7 +41,7 @@
     <div class="content">
         <!--- Banner --->
         <div class="banner">
-            <div class="banner__textBox">
+            <div class="banner__textBox wow animate__animated animate__fadeInRight">
                 <div class="banner__title">Contactanos</div>
                 <div class="banner__description">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario</div>
             </div>
@@ -53,7 +54,7 @@
             <img src="assets/img/bg/contact.jpg" alt="Background Contacto" class="page__background">
             <div class="contentBox contentBox--flex">
                 <!--- Form --->
-                <div class="form"><form action="" method="POST" enctype="multipart/form-data">
+                <div class="form wow animate__animated animate__fadeInUp"><form action="" method="POST" enctype="multipart/form-data">
                     <div class="form__field">
                         <label for="name">Nombre</label>
                         <input type="text" name="name" placeholder="Nombre">
@@ -76,7 +77,7 @@
                     <div><input class="form__btn btn" type="submit" name="" value="ENVIAR"></div>
                     </form>
                 </form></div>
-                <div class="contentBox--flex__column">
+                <div class="contentBox--flex__column wow animate__animated animate__fadeInUp">
                     <iframe class="mapContact"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <p>Callao 960, San Miguel - Buenos Aires</p>
                     <div class="contactSocial">
@@ -93,15 +94,21 @@
     
     <!--- Footer --->
     <div class="footer">
-        <div class="footer__author">
+        <div class="footer__author wow animate__animated animate__fadeInUp">
             <p>Grupo Scout Nuestra Señora de Fátima</p>
             <p>Desarrollado por Valeria Del Savio</p>
         </div>
-        <div class="footer__social">
+        <div class="footer__social wow animate__animated animate__fadeInUp">
             <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
             <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
     </div>
     <!--- End footer --->
+
+    <!-- Scripts -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
 </html>

@@ -38,6 +38,9 @@ body{
     border-radius: 100%;
     transform: translateY(15px);
 }
+.header__logoImg:hover{
+    transform: translateY(15px) scale(1.1)
+}
 .header__menu{
     display: flex;
     flex-direction: row;
@@ -46,11 +49,18 @@ body{
 .header__menu li{
     display: inline-block;
 }
+
 .header__menu a{
     color: white;
     text-decoration: none;
     margin: 20px;
     font-weight: 700;
+}
+.header__menu li:hover{
+    background: white;
+}
+.header__menu a:hover{
+    color: black;
 }
 .header__menu--active a{
     color: #E7DF1A;
@@ -67,6 +77,9 @@ body{
     border-radius: 100px;
     color: white;
     border:none;
+}
+.btn:hover{
+    transform: scale(1.1)
 }
 .btn a{
     color: white;
@@ -125,7 +138,7 @@ body{
     padding: 20px 50px;
     
     color: white;
-    background: rgb(34,34,34,0.5);
+    background: linear-gradient(to right, rgb(34,34,34,0.5) 70%, rgb(34,34,34,0.35));
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border-radius: 20px 0 0 20px;
@@ -172,6 +185,7 @@ body{
     background: rgb(34,34,34,0.5);
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 .scouter{
     display: grid;
@@ -263,19 +277,19 @@ body{
     border-radius: 100%;
 }
 .backOrange{
-    background: Orange;
+    background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0));
 }
 .backYellow{
-    background: Yellow;
+    background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0));
 }
 .backGreen{
-    background: Green;
+    background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0));
 }
 .backBlue{
-    background: cyan;
+    background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0));
 }
 .backRed{
-    background: red;
+    background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0));
 }
 
 /* BE SCOUT */
@@ -320,6 +334,7 @@ body{
     backdrop-filter: blur(20px);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
     padding: 30px 30px;
+    position: relative;
 }
 .contactHome a{
     color:white;
