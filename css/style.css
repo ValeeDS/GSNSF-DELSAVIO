@@ -5,30 +5,91 @@
     padding:0px;
     font-family: "Josefin Sans";
 }
+body{
+    min-height: 100vh;
+}
+/*Classes*/
+/*A guide for myself to take in consideration which classes I'm using*/
+/*
+.header
+.header__logoDiv
+.header__logoImg
+.header__menu
+.header__menu__section
+.header__menu__section--active
+.header_btn
 
-/*Header*/
+.footer
+.footer__author
+.footer__social
+.footer__social__icon
+
+.content
+.banner
+.banner__mainImg
+.banner__textBox
+.banner__title
+.banner__description
+
+.page
+.page__background
+
+.contentBox
+.contentBox__column
+
+.scouter
+.scouter__photo
+.scouter__name
+.scouter__totem
+.scouter__position
+
+.calendar
+.mapContact
+
+.form__field
+.form__field--oneColumn
+
+.contactSocial
+
+.btn
+*/
+
+/* HEADER */
 .header{
+    width:100%;
+    height:70px;
+    position:sticky;
+    top:0;
+    z-index:100;
+
     background-color: #222;
     font-size: 18px;
+    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
+}
+.header__logoDiv{
+    position: absolute;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    top: 10px;
+    left: 30px;
+    
+    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
+    border-radius: 100%;
+}
+.header__logoImg{
     width: 100%;
-    height: 70px;
-    z-index: 100;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 0 10px 5px rgb(0,0,0,0.4)
 }
 .header__menu{
     display: inline-block;
     position: absolute;
     top: 26px;
-    right: 10px;   
+    right: 200px;
 }
 .header__menu__section{
     display: inline-block;
-}
-.header__menu__section a{
-    color: white;
-    text-decoration: none;
+    position: relative;
+    
 }
 .header__menu__section a{
     color: white;
@@ -36,34 +97,77 @@
     margin: 20px;
     font-weight: 700;
 }
-.header__logoDiv{
-    display: inline-block;
+.header__menu__section--active a{
+    color: #E7DF1A;
 }
-.header__logoDiv__img{
-    height: 80px;
-    margin: 10px 30px;
-    box-shadow: 0 0 10px 5px rgb(0,0,0,0.4);
-    border-radius: 40px;
+.header__btn{
+    position: absolute;
+    top: 14px;
+    right: 30px;
+    
+    font-weight: 700;
 }
 
-/* Body*/
+/* FOOTER */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    
+    background: #222;
+    color:white;
+    font-size: 12px;
+    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
+}
+.footer__author{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+}
+.footer__social{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 30px;
+}
+.footer__social__icon{
+    height: 100%;
+    margin: 0px 10px;
+}
+
+/* BODY */
 .content{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 120px);
 }
+/*Banner*/
 .banner{
     position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.banner__mainImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .banner__textBox{
-    color: #fff;
-    margin-left: 50px;
     position: absolute;
     width: 100%;
-    top:95px;
-    vertical-align: middle;
-    background-color: rgb(0,0,0,0.5);
-    padding:20px;
-    padding-left:50px;
+    left: 50px;
+    padding: 20px 50px;
+    top: 84px;
+    
+    color: white;
+    background: rgb(34,34,34,0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 .banner__title{
     font-size: 48px;
@@ -72,27 +176,246 @@
 .banner__description{
     font-size: 18px;
 }
-.banner__mainImg{
+/*Content of the page itself*/
+.page{
+    position: relative;
+    box-sizing: border-box;
+    padding: 30px 50px;
     width: 100%;
-    height: 300px;
+}
+.page__background{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
     object-fit: cover;
 }
-
-.columna{
-    width:  41%;
-    padding: 50px;
-    display: inline-block;
+/*Elements*/
+.contentBox{
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    
+    color: white;
+    background: rgb(34,34,34,0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.contentBox p{
+    margin-bottom: 10px;
+}
+.contentBox a{
+    color: white;
+    text-decoration: none;
+}
+.contentBox__column{
+    box-sizing: border-box;
+    width:  49%;
+    display: inline-block;    
     vertical-align: top;
 }
-.columna form{
+.scouter{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    padding-top: 75px;
+}
+.scouter__photo{
+    z-index: 2;
+    position: absolute;
+    top:0;
+    left: 20px;
+    width: 150px;
+}
+.scouter__name{
+    margin-left: 150px;
+    
+    font-family: "Zen Antique";
+    font-size: 24px;
+}
+.scouter__totem{
+    margin-left: 150px;
+    
+    mix-blend-mode: overlay;
+    font-size: 18px;
+}
+.scouter__position{
+    margin: 10px 0;
+    
+    font-size: 24px;
+}
+.calendar{
+    position: relative;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: 600px;
+    margin: 20px;
+    padding: 40px;
+    
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.mapContact{
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+}
+.contactSocial{
+    display: inline-block;
+    text-align: left;
+    width: 35%;
+    margin-left: -15%;
+}
+.contactSocial a{
+    display: inline-block;
+    font-family: "Zen Antique";
+    text-align: left;
+    height: 25px;
+}
+.ageGroups{
+    position: relative;
+    height: 420px;
+    padding: 0;
+    top:0;
+    left: 0;
+    margin: -30px -50px 0;
+    text-align: center;
+}
+.ageGroups__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index:2;
+    background: rgb(34,34,34,0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.rama{
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    top:30px;
+    padding-top: 0;
+    text-align: center;
+    color:#222;
+    width: 19vw;
+}
+.rama__logo{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    background: white;
+    border-radius:100%;
+}
+.rama__name{
+    font-size: 36px;
+    mix-blend-mode: overlay;
+}
+.rama__age{
+    font-size: 18px;
+    mix-blend-mode: overlay;
+}
+.backCircles{
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    top: 50px;
+    left: -20px;
+    overflow: hidden;
+}
+.backCircle{
+    display: inline-block;
+    position: relative;
+    height: 23vw;
+    width: 23vw;
+    border-radius: 100%;
+    margin-right: -50px;
+}
+.backOrange{
+    background: Orange;
+}
+.backYellow{
+    background: Yellow;
+}
+.backGreen{
+    background: Green;
+}
+.backBlue{
+    background: cyan;
+}
+.backRed{
+    background: red;
+}
+.beScoutSection{
+    margin: 0 -50px;
+    z-index: 1;
+    position: relative;
+    background: #222;
+    color:white;
+}
+.beScout{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    padding: 45px 50px;
+    text-align: center;
+}
+.beScout__title{
+    font-family: "Zen Antique";
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.beScout__subtitle{
+    font-size: 24px;
+    margin-bottom:  75px;
+}
+.beScout_btn{
+    font-size: 24px;
+    font-weight: 600;
+}
+.contactHome{
+    position: relative;
+    z-index: 1;
+    margin: 0 -50px;
+    color: white;
+    background: rgb(34,34,34,0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    padding: 30px 80px;
+}
+.contactHome a{
+    color:white;
+    text-decoration: none;
+    display: block;
+}
+.contactHome__title{
+    font-family: Zen Antique;
+    font-size: 36px;
+    margin-bottom:40px;
+}
+.contactHome__address{
+    margin-top:40px;
+}
+/* FORM */
+form{
     width: 100%;
     text-align: center;
 }
 .form__field{
-    width: 49%;
     box-sizing: border-box;
     display: inline-block;
     padding: 10px 0 5px 10px;
+    width: 49%;
     text-align: left;
 }
 .form__field--oneColoumn{
@@ -105,71 +428,41 @@
     padding-left:5px;
 }
 .form__field input{
-    width: 100%;
-    height: 25px;
-    font-size: 14px;
-    padding-left: 10px;
     display: inline-block;
-    border-radius: 10px;
-    border: 1px solid #f5f5f5;
-    background-color: #f5f5f5;
+    width: 90%;
+    height: 30px;
+    padding: 0 10px;
+    
+    color: #C4C4C4;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
 }
 .form__field textarea{
-    width: 100%;
-    height: 200px;
-    font-size: 14px;
-    padding-left: 10px;
-    padding-top: 10px;
     display: inline-block;
-    border-radius: 10px;
-    border: 1px solid #f5f5f5;
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+    
+    color: #C4C4C4;
+    font-size: 16px;
     background-color: #f5f5f5;
-}
-.btn{
-    margin: 10px;
-    background-color: #0394fc;
-    border: 2px solid;
-    border-top-color: #abdcff;
-    border-left-color: #abdcff;
-    border-bottom-color: #046eba;
-    border-right-color: #046eba;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color:white;
-}
-.mapContact{
-    width: 100%;
-    max-height:300px;
+    border: none;
+    border-radius: 15px;
 }
 
-/* Footer */
-.footer{
-    position: relative;
+/* BUTTONS */
+.btn{
+    padding: 10px 20px;
+    display: inline-block;
+    
+    background-color: #16B2D9;
+    border-radius: 100px;
     color: white;
-    background-color: #222;
-    font-size: 12px;
-    width: 100%;
-    height: 50px;
-    bottom: 0px;
-    box-shadow: 0 0 10px 5px rgb(0,0,0,0.4)
+    border:none;
 }
-.footer__author{
-    display: inline-block;
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    text-align: center
-}
-.footer__social{
-    height: 30px;
-    overflow: hidden;
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 30px;
-    top: 10px;
-}
-.footer__social img{
-    height: 30px;
-    margin: 0px 10px;
+.btn a{
+    color: white;
+    text-decoration: none;
 }

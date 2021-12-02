@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grupo Scout Nuestra Señora de Fátima</title>
+    <title>Contacto | GSNSF</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
     <!--- Header --->
     <div class="header">
+        <!--- Logo --->
         <div class="header__logoDiv">
-            <!--- Logo --->
-            <a href="index.html"><img class="header__logoDiv__img" src="assets/img/logo.png" alt="Logo"></a>
+            <a href="index.html"><img class="header__logoImg" src="assets/img/logo.png" alt="Logo"></a>
         </div>
 
-        <!--- Menú del sitio --->
+        <!--- Nav Menu --->
         <div class="header__menu">
             <ul>
                 <li class="header__menu__section">
@@ -26,64 +26,87 @@
                     <a href="dirigentes.html">Dirigentes</a></li>
                 <li class="header__menu__section">
                     <a href="eventos.html">Eventos</a></li>
-                <li class="header__menu__section">
+                <li class="header__menu__section header__menu__section--active">
                     <a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-    </div>
 
-    <!--- contenido --->
-    <div class="content"> 
+        <!--- My Account button --->
+        <div class="header__btn btn"><a href="">Mi cuenta</a></div>
+    </div>
+    <!--- End Header --->
+
+    <!--- Content --->
+    <div class="content">
+        <!--- Banner --->
         <div class="banner">
             <div class="banner__textBox">
                 <div class="banner__title">Contactanos</div>
-                <p class="banner__description">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario</p>
+                <div class="banner__description">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario</div>
             </div>
             <!--- imagen --->
-            <img class="banner__mainImg" src="assets/img/contacto.jpg" alt="Contacto">
+            <img class="banner__mainImg" src="assets/img/banner/contact.jpg" alt="contacto">
         </div>
-        <div>
-            <div class="columna">
-                <!--- formulario --->
-                <form action="" method="POST" enctype="multipart/form-data" >
-                    <div class="form__field">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" placeholder="Nombre">
+
+        <!--- Page content --->
+        <div class="page">
+            <img src="assets/img/bg/contact.jpg" alt="Background Contacto" class="page__background">
+            <div class="contentBox">
+                <div class="contentBox__column">
+                    <!--- Form --->
+                    <form action="" method="POST" enctype="multipart/form-data" >
+                        <div class="form__field">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" placeholder="Nombre">
+                        </div>
+                        <div class="form__field">
+                            <label for="last-name">Apellido</label>
+                            <input type="text" name="last-name" placeholder="Apellido">
+                        </div>  
+                        <div class="form__field">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" placeholder="Correo electrónico">
+                        </div>
+                        <div class="form__field">
+                            <label for="phone">Teléfono</label>
+                            <input type="number" name="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form__field form__field--oneColoumn">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" placeholder="Escribí tu mensaje acá"></textarea></div>
+                        <div><input class="btn" type="submit" name="" value="ENVIAR"></div>
+                    </form>
+                </div>
+                <div class="contentBox__column">
+                    <iframe class="mapContact"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div>
+                        <p>Callao 960, San Miguel - Buenos Aires</p>
+                        <div class="contentBox__column">
+                            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
+                        </div>
+                        <div class="contentBox__column contactSocial">
+                            <a href="tel:+541123456789">+54 9 11 2345-6789</a>
+                            <a href="mailto:gsnsfsanmiguel@gmail.com">gsnsfsanmiguel@gmail.com</a>
+                        </div>
                     </div>
-                    <div class="form__field">
-                        <label for="last-name">Apellido</label>
-                        <input type="text" name="last-name" placeholder="Apellido">
-                    </div>  
-                    <div class="form__field">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" placeholder="Correo electrónico">
-                    </div>
-                    <div class="form__field">
-                        <label for="phone">Teléfono</label>
-                        <input type="number" name="phone" placeholder="Teléfono">
-                    </div>
-                    <div class="form__field form__field--oneColoumn">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" placeholder="Escribí tu mensaje acá"></textarea></div>
-                    <div><input class="btn" type="submit" name="" value="ENVIAR"></div>
-                </form>
-            </div>
-            <div class="columna">
-                <iframe class="mapContact"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </div>
     </div>
-
-    <!--- footer --->
+    <!--- End content --->
+    
+    <!--- Footer --->
     <div class="footer">
         <div class="footer__author">
             <p>Grupo Scout Nuestra Señora de Fátima</p>
             <p>Desarrollado por Valeria Del Savio</p>
         </div>
         <div class="footer__social">
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/groups/150442284984459"><img src="assets/img/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
-    </div>    
+    </div>
+    <!--- End footer --->
 </body>
 </html>

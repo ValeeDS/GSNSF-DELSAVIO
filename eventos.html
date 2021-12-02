@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grupo Scout Nuestra Señora de Fátima</title>
+    <title>Eventos | GSNSF</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
     <!--- Header --->
     <div class="header">
+        <!--- Logo --->
         <div class="header__logoDiv">
-            <!--- Logo --->
-            <a href="index.html"><img class="header__logoDiv__img" src="assets/img/logo.png" alt="Logo"></a>
+            <a href="index.html"><img class="header__logoImg" src="assets/img/logo.png" alt="Logo"></a>
         </div>
 
-        <!--- Menú del sitio --->
+        <!--- Nav Menu --->
         <div class="header__menu">
             <ul>
                 <li class="header__menu__section">
@@ -24,34 +24,52 @@
                     <a href="historia.html">Nuestra Historia</a></li>
                 <li class="header__menu__section">
                     <a href="dirigentes.html">Dirigentes</a></li>
-                <li class="header__menu__section">
+                <li class="header__menu__section header__menu__section--active">
                     <a href="eventos.html">Eventos</a></li>
                 <li class="header__menu__section">
                     <a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-    </div>
 
-    <!--- contenido --->
-    <div class="content">  
-        <div>
-            <div>Eventos</div>
-            <p>Acá vas a poder ver los eventos programados del grupo y las actividades parroquiales</p>
+        <!--- My Account button --->
+        <div class="header__btn btn"><a href="">Mi cuenta</a></div>
+    </div>
+    <!--- End Header --->
+
+    <!--- Content --->
+    <div class="content">
+        <!--- Banner --->
+        <div class="banner">
+            <div class="banner__textBox">
+                <div class="banner__title">Eventos</div>
+                <div class="banner__description">Acá vas a poder ver los eventos programados del grupo y las actividades parroquiales</div>
+            </div>
+            <!--- imagen --->
+            <img class="banner__mainImg" src="assets/img/banner/events.jpg" alt="eventos">
         </div>
-        <!--- calendario --->
-    	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FBuenos_Aires&showTz=1&showCalendars=0&title=Eventos&src=Z3Nuc2ZzYW5taWd1ZWxAZ21haWwuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
 
-    <!--- footer --->
+        <!--- Page content --->
+        <div class="page">
+            <img src="assets/img/bg/events.jpg" alt="Background Eventos" class="page__background">
+            <div class="contentBox">
+                <!--- calendario --->
+    	       <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FArgentina%2FBuenos_Aires&showTz=1&showCalendars=0&title=Eventos&src=Z3Nuc2ZzYW5taWd1ZWxAZ21haWwuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>   
+    </div>
+    <!--- End content --->
+    
+    <!--- Footer --->
     <div class="footer">
         <div class="footer__author">
             <p>Grupo Scout Nuestra Señora de Fátima</p>
             <p>Desarrollado por Valeria Del Savio</p>
         </div>
         <div class="footer__social">
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/groups/150442284984459"><img src="assets/img/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
-    </div>    
+    </div>
+    <!--- End footer --->
 </body>
 </html>
