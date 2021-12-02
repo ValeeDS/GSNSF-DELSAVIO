@@ -1,37 +1,46 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Grupo Scout Nuestra Señora de Fátima</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grupo Scout Nuestra Señora de Fátima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
-	<!--- Header --->
-	<div class="header">
-		<div>
-			<!--- Logo --->
-			<a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
-		</div>
+    <!--- Header --->
+    <div class="header">
+        <div class="header__logoDiv">
+            <!--- Logo --->
+            <a href="index.html"><img class="header__logoDiv__img" src="assets/img/logo.png" alt="Logo"></a>
+        </div>
 
-		<!--- Menú del sitio --->
-		<div class="menu">
-			<ul>
-			    <li><a href="index.html">Home</a></li>
-			    <li><a href="historia.html">Nuestra Historia</a></li>
-			    <li><a href="dirigentes.html">Dirigentes</a></li>
-			    <li><a href="eventos.html">Eventos</a></li>
-			    <li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</div>
-	</div>
+        <!--- Menú del sitio --->
+        <div class="header__menu">
+            <ul>
+                <li class="header__menu__section">
+                    <a href="index.html">Home</a></li>
+                <li class="header__menu__section">
+                    <a href="historia.html">Nuestra Historia</a></li>
+                <li class="header__menu__section">
+                    <a href="dirigentes.html">Dirigentes</a></li>
+                <li class="header__menu__section">
+                    <a href="eventos.html">Eventos</a></li>
+                <li class="header__menu__section">
+                    <a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
 
-	<!--- contenido --->
-	<div> 
-		<div>
+    <!--- contenido --->
+    <div class="content"> 
+		<div class="banner">
+			<div class="banner__textBox">
+                <div class="banner__title">Bienvenidos</div>
+                <div class="banner__description">Grupo Scout Nuestra Señora de Fátima</div>
+            </div>
 			<!--- slider CTAs --->
-			<img src="assets/img/home.jpg" alt="Home">
+			<img class="banner__mainImg" src="assets/img/home.jpg" alt="Home">
 		</div>
 		<div>
 			<div class="rama">
@@ -75,13 +84,14 @@
 
 	<!--- footer --->
     <div class="footer">
-        <div>
+        <div class="footer__author">
+            <p>Grupo Scout Nuestra Señora de Fátima</p>
             <p>Desarrollado por Valeria Del Savio</p>
         </div>
-        <div>
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img src="assets/img/instagram.png" alt="Instagram">@gs_ntra_sra_de_fatima</a>
-            <a href="https://www.facebook.com/groups/150442284984459"><img src="assets/img/facebook.png" alt="Facebook">Grupo Scout Nuestra Señora de Fátima</a>
+        <div class="footer__social">
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459"><img src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
-    </div>
+    </div>    
 </body>
 </html>
