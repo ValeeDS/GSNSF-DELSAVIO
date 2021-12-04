@@ -39,7 +39,7 @@ body{
     transform: translateY(15px);
 }
 .header__logoImg:hover{
-    transform: translateY(15px) scale(1.1)
+    transform: translateY(15px) scale(1.1);
 }
 .header__menu{
     display: flex;
@@ -79,7 +79,7 @@ body{
     border:none;
 }
 .btn:hover{
-    transform: scale(1.1)
+    transform: scale(1.1) !important;
 }
 .btn a{
     color: white;
