@@ -93,8 +93,7 @@
     <!--- Footer --->
     <div class="footer">
         <div class="footer__author wow animate__animated animate__fadeInUp">
-            <p>Grupo Scout Nuestra Señora de Fátima</p>
-            <p>Desarrollado por Valeria Del Savio</p>
+            <p>Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
         </div>
         <div class="footer__social wow animate__animated animate__fadeInUp">
             <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
@@ -104,37 +103,71 @@
     <!--- End footer --->
 
     <!-- MODAL -->
-    <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Show a second modal and hide this one with the button below.
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
-          </div>
+    <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="logIn" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logIn">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer justify-content-evenly">
+                    <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Iniciar Sesión</button>
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Registrarse</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Hide this modal and show the first with the button below.
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
-          </div>
+    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="register" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="register">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer justify-content-evenly">
+                    <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal">Iniciar Sesión</button>
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Registrarse</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="First name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="First name">
+                            </div>
+                            <div class="col">
+                                <label for="Last name" class="form-label">Email</label>.
+                                <input type="text" class="form-control" id="Last name">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                          </div>
+                          <div class="col-12">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password">
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Registrarme</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!--<a class="btn btn-primary" data-bs-toggle="modal" href="#logInModal" role="button">Open first modal</a>-->
 
