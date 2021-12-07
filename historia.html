@@ -11,38 +11,13 @@
 </head>
 <body>
     <!--- Header --->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <!--- Logo --->
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--- Nav Menu --->
-            <div class="collapse navbar-collapse justify-content-evenly" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-    <!--
     <div class="header">
+        <!--- Logo --->
         <div class="header__logoDiv animate__animated animate__slideInDown">
             <a href="index.html"><img class="header__logoImg" src="assets/img/logo.png" alt="Logo"></a>
         </div>
+
+        <!--- Nav Menu --->
         <div class="header__menu animate__animated animate__slideInDown">
             <ul>
                 <li class="header__menu">
@@ -57,32 +32,28 @@
                     <a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-    -->
+
         <!--- My Account button --->
         <!--<div class="header__btn btn animate__animated animate__slideInDown"><a href="">Mi cuenta</a></div>-->
         <button type="button" class="btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
-    <!--
     </div>
-    -->
-        </div>
-    </nav>
-   <!--- End Header --->
+    <!--- End Header --->
 
     <!--- Content --->
-    <div class="content">
+    <div class="content w-100">
         <!--- Banner --->
-        <div class="banner">
-            <div class="banner__textBox wow animate__animated animate__fadeInRight">
+        <div class="banner d-flex justify-content-end align-items-center">
+            <div class="banner__textBox ms-5 py-4 px-5 wow animate__animated animate__fadeInRight">
                 <div class="banner__title">Nuestra historia</div>
                 <div class="banner__description">Desde 2010 hasta hoy</div>
             </div>
             <!--- imagen --->
-            <img class="banner__mainImg" src="assets/img/banner/story.jpg" alt="historia">
+            <img class="banner__mainImg w-100 h-100" src="assets/img/banner/story.jpg" alt="historia">
         </div>
 
         <!--- Page content --->
-        <div class="page">
-            <img src="assets/img/bg/story.jpg" alt="Background Nuestra Historia" class="page__background">
+        <div class="page p-4 w-100 position-relative">
+            <img src="assets/img/bg/story.jpg" alt="Background Nuestra Historia" class="page__background position-absolute w-100 h-100 top-0 start-0">
             <div class="contentBox wow animate__animated animate__fadeIn">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -120,9 +91,9 @@
     <!--- End content --->
     
     <!--- Footer --->
-    <div class="footer">
-        <div class="footer__author wow animate__animated animate__fadeInUp">
-            <p>Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
+    <div class="footer position-relative bottom-0 w-100 px-1 d-flex flex-row justify-content-end align-items-center">
+        <div class="footer__author flex-fill wow animate__animated animate__fadeInUp">
+            <p class="m-0">Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
         </div>
         <div class="footer__social wow animate__animated animate__fadeInUp">
             <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
