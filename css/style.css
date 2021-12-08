@@ -12,19 +12,10 @@ body{
 
 /* HEADER */
 .header{
-    width:100%;
-    position:sticky;
     top:0;
     z-index:100;
-    padding: 0 5%;
-    
-    display: grid;
-    grid-template-columns: max-content auto max-content;
-    grid-template-rows: 70px;
-    align-items: center;
-    
+    height: 70px;
     background-color: #222;
-    font-size: 18px;
     box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
 }
 .header__logoDiv{
@@ -46,21 +37,13 @@ body{
     flex-direction: row;
     justify-content: center;
 }
-.header__menu li{
-    display: inline-block;
-}
-
 .header__menu a{
     color: white;
     text-decoration: none;
-    margin: 20px;
     font-weight: 700;
 }
-.header__menu li:hover{
-    background: white;
-}
 .header__menu a:hover{
-    color: black;
+    text-decoration: underline;
 }
 .header__menu--active a{
     color: #E7DF1A;
