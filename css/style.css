@@ -178,7 +178,6 @@ body{
 /* RAMAS */
 .ageGroups,
 .ageGroups__background{
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(5,350px);
@@ -199,11 +198,6 @@ body{
     z-index: 1;
 }
 .rama{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-top: 0;
     height: 300px;
     z-index: 3;
 }
@@ -249,14 +243,9 @@ body{
 .beScoutSection{
     z-index:1;
     margin: 0 -30px;
-    display: flex;
-    flex-flow: row wrap;
     color: white;
 }
 .beScout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #222;
     width: 100%;
     padding: 45px 50px; 
