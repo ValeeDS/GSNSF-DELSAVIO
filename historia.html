@@ -22,8 +22,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
                 <!-- Menu -->
-                <div class="collapse navbar-collapse w-100 justify-content-evenly" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 justify-content-evenly mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row w-100 header__menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 justify-content-lg-evenly align-items-center mb-2 mb-lg-0">
                         <li class="nav-item header__menu">
                             <a href="index.html">Home</a></li>
                         <li class="nav-item header__menu header__menu--active">
@@ -35,10 +35,8 @@
                         <li class="nav-item header__menu">
                             <a href="contacto.html">Contacto</a></li>
                     </ul>
+                    <button type="button" class="w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
                 </div>
-
-                <!-- Button -->
-                <button type="button" class="w-auto flex-shrink-0 btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
             </div>
         </nav>
     </div>

@@ -33,9 +33,7 @@ body{
     transform: translateY(15px) scale(1.1);
 }
 .header__menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    background: #222;
 }
 .header__menu a{
     color: white;
