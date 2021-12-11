@@ -11,33 +11,28 @@
 </head>
 <body class="min-100 d-flex flex-column">
     <!--- Header --->
-    <div class="header position-sticky top-0 p-0 fs-5">
-        <nav class="container-xl navbar py-0 navbar-expand-lg navbar-dark">
+    <div class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand flex-shrink-0 header__logoDiv p-0 m-0" href="index.html">
-                    <img class="header__logoImg p-0" src="assets/img/logo.png" alt="Logo">
-                </a>
+                <a class="navbar-brand h-100 p-0" href="#"><img class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.png" alt="Logo"></a>
                 <!-- Burger mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-                <!-- Menu -->
-                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row w-100 header__menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 justify-content-lg-evenly align-items-center mb-2 mb-lg-0">
-                        <li class="nav-item header__menu">
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-lg-evenly w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
                             <a href="index.html">Home</a></li>
-                        <li class="nav-item header__menu ">
+                        <li class="nav-item">
                             <a href="historia.html">Nuestra Historia</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="dirigentes.html">Dirigentes</a></li>
-                        <li class="nav-item header__menu header__menu--active">
+                        <li class="nav-item nav-item--active">
                             <a href="eventos.html">Eventos</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="contacto.html">Contacto</a></li>
                     </ul>
-
                     <!-- My Account button -->
-                    <button type="button" class="w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
+                    <button type="button" class="fw-bold w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
                 </div>
             </div>
         </nav>
@@ -148,7 +143,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
