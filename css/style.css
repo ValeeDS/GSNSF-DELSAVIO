@@ -15,12 +15,16 @@
 .nav-item--active a{
     color: #E7DF1A;
 }
+
 /* SIZING */
 .min-100{
 	min-height: 100vh;
 }
 .h-600{
 	height: 600px;
+}
+.h-30{
+	height: 30px;
 }
 .bannerHeight{
 	min-height: 300px;
@@ -45,6 +49,9 @@
 }
 .fs-5-6{
 	font-size: 1rem;
+}
+.fs-7{
+	font-size: 0.75rem;
 }
 
 @media all and (min-width: 768px){
