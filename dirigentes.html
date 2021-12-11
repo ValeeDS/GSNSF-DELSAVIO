@@ -9,35 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png">
 </head>
-<body>
+<body class="min-100 d-flex flex-column">
     <!--- Header --->
-    <div class="header position-sticky top-0 p-0 fs-5">
-        <nav class="container-xl navbar py-0 navbar-expand-lg navbar-dark">
+    <div class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand flex-shrink-0 header__logoDiv p-0 m-0" href="index.html">
-                    <img class="header__logoImg p-0" src="assets/img/logo.png" alt="Logo">
-                </a>
+                <a class="navbar-brand h-100 p-0" href="#"><img class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.png" alt="Logo"></a>
                 <!-- Burger mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-                <!-- Menu -->
-                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row w-100 header__menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 justify-content-lg-evenly align-items-center mb-2 mb-lg-0">
-                        <li class="nav-item header__menu">
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-lg-evenly w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
                             <a href="index.html">Home</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="historia.html">Nuestra Historia</a></li>
-                        <li class="nav-item header__menu header__menu--active">
+                        <li class="nav-item nav-item--active">
                             <a href="dirigentes.html">Dirigentes</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="eventos.html">Eventos</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="contacto.html">Contacto</a></li>
                     </ul>
-
                     <!-- My Account button -->
-                    <button type="button" class="w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
+                    <button type="button" class="fw-bold w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
                 </div>
             </div>
         </nav>
@@ -45,21 +40,21 @@
     <!--- End Header --->
 
     <!--- Content --->
-    <div class="content w-100">
+    <div class="flex-grow-1 d-flex flex-column">
         <!--- Banner --->
-        <div class="banner d-flex justify-content-end align-items-center">
-            <div class="banner__textBox ms-5 py-4 px-5 wow animate__animated animate__fadeInRight">
-                <div class="banner__title">Dirigentes</div>
-                <div class="banner__description">Conocé a nuestro Consejo de Grupo</div>
+        <div class="w-100 d-flex justify-content-end align-items-center bannerHeight">
+            <div class="position-absolute py-4 px-5 text-white bg-blackTransparent blur shadow br-s-20 banner__textBoxWidth wow animate__animated animate__fadeInRight">
+                <div class="fs-1 ff-Zen">Eventos</div>
+                <div class="fs-5-6">Acá vas a poder ver los eventos programados del grupo y las actividades parroquiales</div>
             </div>
             <!--- imagen --->
-            <img class="banner__mainImg w-100 h-100" src="assets/img/banner/scouters.jpg" alt="dirigentes">
+            <img class="fit-cover w-100 h-100" src="assets/img/banner/scouters.jpg" alt="dirigentes">
         </div>
 
         <!--- Page content --->
-        <div class="page p-4 w-100 position-relative">
-            <img src="assets/img/bg/scouters.jpg" alt="Background Dirigentes" class="page__background position-absolute w-100 h-100 top-0 start-0">
-            <div class="grid">
+        <div class="flex-grow-1 w-100 p-4 position-relative">
+            <img src="assets/img/bg/scouters.jpg" alt="Background Dirigentes" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
+            <div class="zi-1 position-relative grid">
                 <div class="scouter contentBox wow animate__animated animate__fadeInUp">
                     <img class="scouter__photo" src="assets/img/diri1.png" alt="diri1">
                     <div class="scouter__name">Sol Rojas</div>
@@ -108,13 +103,13 @@
     <!--- End content --->
 
     <!--- Footer --->
-    <div class="footer position-relative bottom-0 w-100 px-1 d-flex flex-row justify-content-end align-items-center">
-        <div class="footer__author flex-fill wow animate__animated animate__fadeInUp">
+    <div class="d-flex flex-row justify-content-end align-items-center position-relative bottom-0 w-100 px-1 text-white bg-myDark shadow fs-7">
+        <div class="text-center flex-fill py-1 wow animate__animated animate__fadeInUp">
             <p class="m-0">Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
         </div>
-        <div class="footer__social wow animate__animated animate__fadeInUp">
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
+        <div class="h-30 wow animate__animated animate__fadeInUp">
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459"><img class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
     </div>
     <!--- End footer --->
