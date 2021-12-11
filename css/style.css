@@ -11,7 +11,13 @@
 .shadow{
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.rs-20{
+.shadow-inset{
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+.br-20{
+	border-radius: 20px;
+}
+.br-s-20{
 	border-radius: 20px 0 0 20px;
 }
 .blur{
@@ -24,10 +30,21 @@
 	font-family: "Zen Antique";
 }
 .fs-5-6{
-	font-size: 1.125rem;
+	font-size: 1rem;
+}
+@media all and (min-width: 768px){
+	.fs-5-6{
+		font-size: 1.125rem;
+	}
 }
 .zi-0{
     z-index: 0;
+}
+.zi-1{
+    z-index: 0;
+}
+.h-600{
+	height: 600px;
 }
 .bannerHeight{
 	min-height: 300px;
@@ -35,4 +52,7 @@
 }
 .banner__textBoxWidth{
 	width: calc(100% - 50px)
+}
+.p-40{
+	padding: 40px;
 }
