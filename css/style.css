@@ -23,8 +23,14 @@
 .h-600{
 	height: 600px;
 }
+.h-300{
+	height: 300px;
+}
 .h-30{
 	height: 30px;
+}
+.h-3{
+	height: 3rem;
 }
 .bannerHeight{
 	min-height: 300px;
@@ -41,6 +47,9 @@
 }
 .p-40{
 	padding: 40px;
+}
+.p-20{
+	padding: 20px;
 }
 
 /* TYPOGRAFY */
@@ -69,8 +78,8 @@
 }
 
 /* SHADOW */
-.shadow{
-	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+.myShadow{
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .shadow-inset{
 	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
@@ -109,4 +118,12 @@
 .btn a{
     color: white;
     text-decoration: none;
+}
+
+/* a STYLING */
+.deco-none a{
+	text-decoration: none;
+}
+.text-white a{
+	color: #fff;
 }
