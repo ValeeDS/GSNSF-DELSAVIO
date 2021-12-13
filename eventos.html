@@ -87,16 +87,18 @@
                     <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Registrarse</button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="col-12">
+                    <form class="row">
+                        <div class="col-12 mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control  rounded-pill" id="password">
                         </div>
-                        <button type="submit" class="btn btn-primary mt-4 mx-auto">Iniciar Sesión</button>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -114,34 +116,32 @@
                     <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Registrarse</button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <label for="First name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="First name">
-                            </div>
-                            <div class="col">
-                                <label for="Last name" class="form-label">Apellido</label>
-                                <input type="text" class="form-control" id="Last name">
-                            </div>
+                    <form class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="first-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control  rounded-pill" id="first-name">
                         </div>
-                        <div class="col-12">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email">
-                          </div>
-                          <div class="col-12">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password">
-                          </div>
-                          <div class="col-12">
-                            <button type="submit" class="btn btn-primary mt-4 mx-auto">Registrarme</button>
-                          </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="last-name" class="form-label">Apellido</label>
+                            <input type="text" class="form-control  rounded-pill" id="last-name">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Email</label>
+                            <input type="email" class="form-control  rounded-pill" id="email">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Contraseña</label>
+                            <input type="password" class="form-control  rounded-pill" id="password">
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Registrarme</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Scripts -->
     <script src="js/wow.min.js"></script>
     <script>
