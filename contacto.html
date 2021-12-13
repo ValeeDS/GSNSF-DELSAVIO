@@ -9,36 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png">
 </head>
-<body>
-    <!-- Cambios para el desafío complementario -->
+<body class="min-100 d-flex flex-column">
     <!--- Header --->
-    <div class="header position-sticky top-0 p-0 fs-5">
-        <nav class="container-xl navbar py-0 navbar-expand-lg navbar-dark">
+    <div class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand flex-shrink-0 header__logoDiv p-0 m-0" href="index.html">
-                    <img class="header__logoImg p-0" src="assets/img/logo.png" alt="Logo">
-                </a>
+                <a class="navbar-brand h-100 p-0" href="#"><img class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.png" alt="Logo"></a>
                 <!-- Burger mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-                <!-- Menu -->
-                <div class="collapse navbar-collapse d-flex flex-column flex-lg-row w-100 header__menu" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 justify-content-lg-evenly align-items-center mb-2 mb-lg-0">
-                        <li class="nav-item header__menu">
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-lg-evenly w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
                             <a href="index.html">Home</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="historia.html">Nuestra Historia</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="dirigentes.html">Dirigentes</a></li>
-                        <li class="nav-item header__menu">
+                        <li class="nav-item">
                             <a href="eventos.html">Eventos</a></li>
-                        <li class="nav-item header__menu header__menu--active">
+                        <li class="nav-item nav-item--active">
                             <a href="contacto.html">Contacto</a></li>
                     </ul>
-
                     <!-- My Account button -->
-                    <button type="button" class="w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary header__btn animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
+                    <button type="button" class="fw-bold w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
                 </div>
             </div>
         </nav>
@@ -46,54 +40,69 @@
     <!--- End Header --->
 
     <!--- Content --->
-    <div class="content w-100">
+    <div class="flex-grow-1 d-flex flex-column">
         <!--- Banner --->
-        <div class="banner d-flex justify-content-end align-items-center">
-            <div class="banner__textBox ms-5 py-4 px-5 wow animate__animated animate__fadeInRight">
-                <div class="banner__title">Contactanos</div>
-                <div class="banner__description">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario</div>
+        <div class="w-100 d-flex justify-content-end align-items-center bannerHeight">
+            <div class="position-absolute py-4 px-5 text-white bg-blackTransparent blur shadow br-s-20 banner__textBoxWidth wow animate__animated animate__fadeInRight">
+                <div class="fs-1 ff-Zen">Eventos</div>
+                <div class="fs-5-6">Acá vas a poder ver los eventos programados del grupo y las actividades parroquiales</div>
             </div>
             <!--- imagen --->
-            <img class="banner__mainImg w-100 h-100" src="assets/img/banner/contact.jpg" alt="contacto">
+            <img class="fit-cover w-100 h-100" src="assets/img/banner/contact.jpg" alt="contacto">
         </div>
 
         <!--- Page content --->
-        <div class="page p-4 w-100 position-relative">
-            <img src="assets/img/bg/contact.jpg" alt="Background Contacto" class="page__background position-absolute w-100 h-100 top-0 start-0">
-            <div class="contentBox contentBox--flex">
+        <div class="flex-grow-1 w-100 p-4 position-relative">
+            <img src="assets/img/bg/contact.jpg" alt="Background Contacto" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
+            <div class="position-relative zi-1 bg-blackTransparent myShadow blur br-20 p-20">
+                <div class="row text-white">
+                    <div class="col-md">
+                        <!-- Form -->
+                        <form class="row wow animate__animated animate__fadeInUp">
+                            <div class="mb-3 col-md-6">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control rounded-pill" id="name" placeholder="Nombre">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="last-name" class="form-label">Apellido</label>
+                                <input type="text" class="form-control rounded-pill" id="last-name" placeholder="Apellido">
+                            </div>
+                            <div class="mb-3 col-md-7">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control rounded-pill" id="email" placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3 col-md-5">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Teléfono">
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje"></textarea>
+                            </div>
+                            <div class="mb-3 col-12 text-center">
+                                <input class="form__btn btn" type="submit" name="" value="ENVIAR">
+                            </div>
+                        </form>
+                        <!-- End form -->
+                    </div>
+                    <div class="col-md text-center wow animate__animated animate__fadeInUp">
+                        <iframe class="w-100 br-20 h-300"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p>Callao 960, San Miguel - Buenos Aires</p>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="h-3 col-12 col-md-auto">
+                                <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
+                                <a href="https://www.facebook.com/groups/150442284984459"><img class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
+                            </div>
+                            <div class="h-auto col-12 col-md-auto deco-none text-white mt-3 mt-md-0">
+                                <a class="d-block" href="tel:+541123456789">+54 9 11 2345-6789</a>
+                                <a class="d-block" href="mailto:gsnsfsanmiguel@gmail.com">gsnsfsanmiguel@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--- Form --->
-                <div class="form wow animate__animated animate__fadeInUp"><form action="" method="POST" enctype="multipart/form-data">
-                    <div class="form__field">
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" placeholder="Nombre">
-                    </div>
-                    <div class="form__field">
-                        <label for="last-name">Apellido</label>
-                        <input type="text" name="last-name" placeholder="Apellido">
-                    </div>
-                    <div class="form__field">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" placeholder="Correo electrónico">
-                    </div>
-                    <div class="form__field">
-                        <label for="phone">Teléfono</label>
-                        <input type="number" name="phone" placeholder="Teléfono">
-                    </div>
-                    <div class="form__field form__field--msg">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" placeholder="Escribí tu mensaje acá"></textarea></div>
-                    <div><input class="form__btn btn" type="submit" name="" value="ENVIAR"></div>
-                    </form>
-                </form></div>
                 <div class="contentBox--flex__column wow animate__animated animate__fadeInUp">
-                    <iframe class="mapContact"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <p>Callao 960, San Miguel - Buenos Aires</p>
-                    <div class="contactSocial">
-                        <div class="contactSocial__icons"><a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a></div>
-                        <a href="tel:+541123456789">+54 9 11 2345-6789</a>
-                        <a href="mailto:gsnsfsanmiguel@gmail.com">gsnsfsanmiguel@gmail.com</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -101,13 +110,13 @@
     <!--- End content --->
     
     <!--- Footer --->
-    <div class="footer position-relative bottom-0 w-100 px-1 d-flex flex-row justify-content-end align-items-center">
-        <div class="footer__author flex-fill wow animate__animated animate__fadeInUp">
+    <div class="d-flex flex-row justify-content-end align-items-center position-relative bottom-0 w-100 px-1 text-white bg-myDark shadow fs-7">
+        <div class="text-center flex-fill py-1 wow animate__animated animate__fadeInUp">
             <p class="m-0">Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
         </div>
-        <div class="footer__social wow animate__animated animate__fadeInUp">
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="footer__social__icon" src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/groups/150442284984459"><img class="footer__social__icon" src="assets/img/facebook.png" alt="Facebook"></a>
+        <div class="h-30 wow animate__animated animate__fadeInUp">
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459"><img class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
     </div>
     <!--- End footer --->
@@ -115,26 +124,28 @@
     <!-- MODAL -->
     <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="logIn" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content text-white bg-blackTransparent blur shadow border-0">
                 <div class="modal-header">
                     <h5 class="modal-title" id="logIn">Iniciar Sesión</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-footer justify-content-evenly">
                     <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Iniciar Sesión</button>
                     <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Registrarse</button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="col-12">
+                    <form class="row">
+                        <div class="col-12 mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control  rounded-pill" id="password">
                         </div>
-                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -142,49 +153,46 @@
     </div>
     <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="register" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content text-white bg-blackTransparent blur shadow">
                 <div class="modal-header">
                     <h5 class="modal-title" id="register">Registrarse</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-footer justify-content-evenly">
                     <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal">Iniciar Sesión</button>
                     <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Registrarse</button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col">
-                                <label for="First name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="First name">
-                            </div>
-                            <div class="col">
-                                <label for="Last name" class="form-label">Email</label>.
-                                <input type="text" class="form-control" id="Last name">
-                            </div>
+                    <form class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="first-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control  rounded-pill" id="first-name">
                         </div>
-                        <div class="col-12">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email">
-                          </div>
-                          <div class="col-12">
-                            <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password">
-                          </div>
-                          <div class="col-12">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="last-name" class="form-label">Apellido</label>
+                            <input type="text" class="form-control  rounded-pill" id="last-name">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Email</label>
+                            <input type="email" class="form-control  rounded-pill" id="email">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Contraseña</label>
+                            <input type="password" class="form-control  rounded-pill" id="password">
+                        </div>
+                        <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Registrarme</button>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

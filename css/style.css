@@ -1,59 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zen+Antique&display=swap');
-
 *{
-    margin:0px;
-    padding:0px;
-    font-family: "Josefin Sans";
-    box-sizing: border-box;
-}
-body{
-    min-height: 100vh;
+	font-family: "Josefin Sans";
 }
 
 /* HEADER */
-.header{
-    top:0;
-    z-index:100;
-    height: 70px;
-    background-color: #222;
-    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
-}
-.header__logoDiv{
-    display: inline-block;
-    height: 70px;
-    width: 70px;
-}
-.header__logoImg{
-    width: 100%;
-    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
-    border-radius: 100%;
-    transform: translateY(15px);
-}
-.header__logoImg:hover{
-    transform: translateY(15px) scale(1.1);
-}
-.header__menu{
-    background: #222;
-}
-.header__menu a{
+.nav-item a{
     color: white;
     text-decoration: none;
     font-weight: 700;
 }
-.header__menu a:hover{
+.nav-item a:hover{
     text-decoration: underline;
 }
-.header__menu--active a{
+.nav-item--active a{
     color: #E7DF1A;
 }
-.header__btn{
-    font-weight: 700;
+
+/* SIZING */
+.min-100{
+	min-height: 100vh;
 }
-/* BUTTONS */
+.h-600{
+	height: 600px;
+}
+.h-300{
+	height: 300px;
+}
+.h-30{
+	height: 30px;
+}
+.h-3{
+	height: 3rem;
+}
+.bannerHeight{
+	min-height: 300px;
+	height: 50vh;
+}
+.banner__textBoxWidth{
+	width: calc(100% - 50px)
+}
+.zi-0{
+    z-index: 0;
+}
+.zi-1{
+    z-index: 1;
+}
+.p-40{
+	padding: 40px;
+}
+.p-20{
+	padding: 20px;
+}
+.m--4{
+	margin: -1.5rem;
+}
+
+/* TYPOGRAFY */
+.ff-Zen{
+	font-family: "Zen Antique";
+}
+.fs-5-6{
+	font-size: 1rem;
+}
+.fs-7{
+	font-size: 0.75rem;
+}
+
+@media all and (min-width: 768px){
+	.fs-5-6{
+		font-size: 1.125rem;
+	}
+}
+
+/* BORDERS */
+.br-20{
+	border-radius: 20px;
+}
+.br-s-20{
+	border-radius: 20px 0 0 20px;
+}
+
+/* SHADOW */
+.myShadow{
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.shadow-inset{
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* BACKGROUNDS */
+.fit-cover{
+	object-fit: cover;
+}
+.blur{
+	backdrop-filter: blur(20px);
+}
+.bg-blackTransparent{
+	background: rgb(34,34,34,0.5);
+}
+.bg-myDark{
+	background: #222;
+}
+
+/* EFECTS */
+.translate-10{
+	transform: translateY(10px)
+}
+
+/* BUTTON */
 .btn{
     padding: 10px 20px;
-    display: inline-block;
-    
     background-color: #16B2D9;
     border-radius: 100px;
     color: white;
@@ -67,86 +123,33 @@ body{
     text-decoration: none;
 }
 
-/* FOOTER */
-.footer{
-    height: 50px;
-    background: #222;
-    color:white;
-    font-size: 12px;
-    box-shadow: 0 0 10px 5px rgb(34,34,34,0.5);
+/* a STYLING */
+.deco-none a{
+	text-decoration: none;
 }
-.footer__author{
-    display: inline-block;
-    text-align: center;
-}
-.footer__social{
-    height: 30px;
-}
-.footer__social__icon{
-    height: 100%;
+.text-white a{
+	color: #fff;
 }
 
-/* BANNER */
-.content{
-    min-height: calc(100vh - 120px);
-}
-.banner{
-    height: 300px;
-}
-.banner__mainImg{
-    object-fit: cover;
-}
-.banner__textBox{
-    position: absolute;
-    width: calc(100% - 50px);
-    
-    color: white;
-    background: linear-gradient(to right, rgb(34,34,34,0.5) 70%, rgb(34,34,34,0.35));
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 20px 0 0 20px;
-}
-.banner__title{
-    font-size: 40px;
-    font-family: "Zen Antique";
-}
-.banner__description{
-    font-size: 18px;
-}
-
-/* BACKGROUND */
-.page{
-    min-height: calc(100vh - 420px);
-}
-.page__background{;
-    z-index: 0;
-}
-
-/* SCOUTERS */
-.grid{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
-    justify-content: center;
-    padding-top: 80px;
-}
-.contentBox{
-    padding: 1.3rem;
-    border-radius: 20px;
-    z-index: 1;
-    color: white;
-    background: rgb(34,34,34,0.5);
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
+/* MY ELEMENTS */
 .scouter{
     display: grid;
     grid-template-areas: "photo name" "totem name" "position position" "bio bio";
-    width: 100%;
-    max-width: 350px;
     z-index: 1;
-    margin-bottom: 50px;
+    padding: 15px;
+    margin-top: 60px;
+    z-index: 1;
+    width: 100%;
+}
+@media all and (min-width: 768px){
+	.scouter{
+		max-width: calc(50% - 1rem);
+	}
+}
+@media all and (min-width: 992px){
+	.scouter{
+		max-width: calc(33.33% - .5rem);
+	}
 }
 .scouter__photo{
     margin-top: -80px;
@@ -175,31 +178,13 @@ body{
     grid-area: bio;
 }
 
-/* RAMAS */
-.ageGroups,
-.ageGroups__background{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(5,350px);
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.ageGroups{
-    z-index: 3;
-}
-.ageGroups__background{
-    top:30px;
-    padding: 0 30px;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
 .rama{
+	display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
     height: 300px;
-    z-index: 3;
+    margin-bottom: 65px;
 }
 .rama__logo{
     height: 180px;
@@ -207,21 +192,44 @@ body{
     object-fit: cover;
     background: white;
     border-radius:100%;
+    z-index: 1;
 }
 .rama__name{
-    font-size: 36px;
+    font-size: 2rem;
     mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1;
 }
 .rama__age{
-    font-size: 18px;
-    mix-blend-mode: overlay
+    font-size: 1.2rem;
+    mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1;
 }
 .backCircle{
     transform: translateY(50px);
     display: inline-block;
     width: 100%;
-    height: calc((100vw - 60px)/1);
+    max-width: 300px;
+    height: calc(100vw/1);
+    max-height: 300px;
     border-radius: 100%;
+    z-index: 0;
+}
+@media all and (min-width: 576px){
+	.backCircle{
+		height: calc(100vw/2);
+	}
+}
+@media all and (min-width: 768px){
+	.backCircle{
+		height: calc(100vw/2);
+	}
+}
+@media all and (min-width: 992px){
+	.backCircle{
+		height: calc(100vw/5);
+	}
 }
 .backOrange{
     background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0));
@@ -238,16 +246,8 @@ body{
 .backRed{
     background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0));
 }
-
-/* BE SCOUT */
-.beScoutSection{
-    z-index:1;
-    margin: 0 -30px;
-    color: white;
-}
 .beScout{
     background: #222;
-    width: 100%;
     padding: 45px 50px; 
     z-index: 1;
 }
@@ -265,291 +265,3 @@ body{
     font-weight: 600;
     max-width: 220px;
 }
-
-/* CONTACT HOME */
-.contactHome{
-    display: flex;
-    flex-direction: column;
-    margin: 50px -30px;
-    color: white;
-    background: rgb(34,34,34,0.5);
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-    padding: 30px 30px;
-    position: relative;
-}
-.contactHome a{
-    color:white;
-    text-decoration: none;
-    display: block;
-}
-.contactHome__title{
-    font-family: Zen Antique;
-    font-size: 36px;
-    margin-bottom:40px;
-}
-.contactHome__address{
-    margin-top:40px;
-}
-.contactHome iframe{
-    width: 100%;
-    margin-top: 30px
-}
-
-/* EVENTS */
-.calendar{
-    position: relative;
-    width: calc(100% - 40px);
-    height: 600px;
-    margin: 20px;
-    padding: 40px;
-    
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
-}
-
-/* CONTACT */
-.contentBox--flex{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-}
-.contentBox a{
-    color:white;
-    text-decoration: none;
-}
-.form{
-    width: 100%;
-}
-form{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.form__field{
-    width: 100%;
-    padding: 10px 0 5px 10px;
-    text-align: left;
-}
-.form__field label{
-    width: 100%;
-    padding-left:5px;
-}
-.form__field input{
-    width: 100%;
-    height: 30px;
-    padding: 0 10px;
-
-    color: #C4C4C4;
-    background-color: #F5F5F5;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-}
-.form__field textarea{
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-
-    color: #C4C4C4;
-    font-size: 16px;
-    background-color: #f5f5f5;
-    border: none;
-    border-radius: 15px;
-}
-.mapContact{
-    width: 100%;
-    border-radius: 20px;
-    height: 300px;
-}
-.contactSocial{
-    margin-top: 10px; 
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-    text-align: center;
-    justify-content: center;
-}
-.contactSocial__icons{
-    display: flex;
-    flex-direction: row; 
-    height: 50px;
-}
-/* MEDIA QUERIES */
-@media all and (min-width: 480px){
-    .ageGroups,
-    .ageGroups__background{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,350px);
-    }
-    .backCircle{
-        height: calc((100vw - 60px)/2);
-    }
-    .contactSocial{
-        display: grid;
-        grid-template-areas: "icon ." "icon .";
-    }
-    .contactSocial__icons{
-        grid-area: icon;
-    }
-}
-@media all and (min-width: 768px){
-    .ageGroups,
-    .ageGroups__background{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,350px);
-    }
-    .backCircle{
-        height: calc((100vw - 60px)/3);
-    }
-    .beScout{
-        width:50%;
-    }
-    .contactHome{
-    display: grid;
-    grid-template-areas: "title map" ". map" ". map" "address map";
-    }
-    .contactHome__title{
-        grid-area: title;
-    }
-    .contactHome__address{
-        grid-area: address;
-    }
-    .contactHome iframe{
-        grid-area: map;
-    }
-    .contentBox--flex{
-    display: flex;
-    flex-flow: row wrap;
-    }
-    .form{
-        width: 50%;
-    }
-    form{
-        width:100%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-areas: ". ." ". ." "msg msg" "sub sub";
-    }
-    .form__field{
-        width: 100%;
-        padding: 10px 0 5px 10px;
-        text-align: left;
-    }
-    .form__field label{
-        width: 100%;
-        padding-left:5px;
-    }
-    .form__field input{
-        width: 100%;
-        height: 30px;
-        padding: 0 10px;
-
-        color: #C4C4C4;
-        background-color: #F5F5F5;
-        border: none;
-        border-radius: 15px;
-        font-size: 16px;
-    }
-    .form__field--msg{
-        grid-area: msg;
-    }
-    .form__field textarea{
-        display: inline-block;
-        width: 100%;
-        height: 200px;
-        padding: 10px;
-
-        color: #C4C4C4;
-        font-size: 16px;
-        background-color: #f5f5f5;
-        border: none;
-        border-radius: 15px;
-    }
-    .contentBox--flex__column{
-        width: 48%
-    }
-}
-@media all and (min-width: 1024px){
-    .ageGroups,
-    .ageGroups__background{
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 350px;
-    }
-    .backCircle{
-        height: calc((100vw - 60px)/5);
-    }
-}
-
-/*Classes*/
-/*A guide for myself to take in consideration which classes I'm using*/
-/*
-.header
-.header__logoDiv
-.header__logoImg
-.header__menu
-.header__menu__section
-.header__menu__section--active
-.header_btn
-
-.footer
-.footer__author
-.footer__social
-.footer__social__icon
-
-.content
-.banner
-.banner__mainImg
-.banner__textBox
-.banner__title
-.banner__description
-
-.page
-.page__background
-
-.contentBox
-.contentBox__column
-
-.scouter
-.scouter__photo
-.scouter__name
-.scouter__totem
-.scouter__position
-
-.calendar
-.mapContact
-
-.contactSocial
-.contactHome
-.contactHome__title
-.contactHome__address
-
-.ageGroups
-.ageGroups__background
-
-.rama
-.rama__logo
-.rama__name
-.rama__age
-
-.backCircles
-.backOrange
-.backYellow
-.backGreen
-.backBlue
-.backRed
-
-.beScoutSection
-.beScout
-.beScout__title
-.beScout__subtitle
-.beScout__btn
-
-.form__field
-.form__field--oneColumn
-
-.btn
-*/
