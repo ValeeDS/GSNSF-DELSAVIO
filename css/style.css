@@ -43,7 +43,7 @@
     z-index: 0;
 }
 .zi-1{
-    z-index: 0;
+    z-index: 1;
 }
 .p-40{
 	padding: 40px;
@@ -126,4 +126,51 @@
 }
 .text-white a{
 	color: #fff;
+}
+
+/* MY ELEMENTS */
+.scouter{
+    display: grid;
+    grid-template-areas: "photo name" "totem name" "position position" "bio bio";
+    z-index: 1;
+    padding: 15px;
+    margin-top: 60px;
+    z-index: 1;
+    width: 100%;
+}
+@media all and (min-width: 768px){
+	.scouter{
+		max-width: calc(50% - 1rem);
+	}
+}
+@media all and (min-width: 992px){
+	.scouter{
+		max-width: calc(33.33% - .5rem);
+	}
+}
+.scouter__photo{
+    margin-top: -80px;
+    width:150px;
+    grid-area: photo;
+}
+.scouter__name{
+    grid-area:name;
+    font-size: 24px;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+.scouter__totem{
+    mix-blend-mode: overlay;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+.scouter__position{
+    margin: 10px 0;
+    grid-area: position;
+    font-size: 24px;
+}
+.scouter__bio{
+    grid-area: bio;
 }
