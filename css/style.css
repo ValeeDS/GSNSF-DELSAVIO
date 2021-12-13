@@ -51,6 +51,9 @@
 .p-20{
 	padding: 20px;
 }
+.m--4{
+	margin: -1.5rem;
+}
 
 /* TYPOGRAFY */
 .ff-Zen{
@@ -173,4 +176,92 @@
 }
 .scouter__bio{
     grid-area: bio;
+}
+
+.rama{
+	display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    margin-bottom: 65px;
+}
+.rama__logo{
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    background: white;
+    border-radius:100%;
+    z-index: 1;
+}
+.rama__name{
+    font-size: 2rem;
+    mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1;
+}
+.rama__age{
+    font-size: 1.2rem;
+    mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1;
+}
+.backCircle{
+    transform: translateY(50px);
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: calc(100vw/1);
+    max-height: 300px;
+    border-radius: 100%;
+    z-index: 0;
+}
+@media all and (min-width: 576px){
+	.backCircle{
+		height: calc(100vw/2);
+	}
+}
+@media all and (min-width: 768px){
+	.backCircle{
+		height: calc(100vw/2);
+	}
+}
+@media all and (min-width: 992px){
+	.backCircle{
+		height: calc(100vw/5);
+	}
+}
+.backOrange{
+    background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0));
+}
+.backYellow{
+    background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0));
+}
+.backGreen{
+    background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0));
+}
+.backBlue{
+    background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0));
+}
+.backRed{
+    background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0));
+}
+.beScout{
+    background: #222;
+    padding: 45px 50px; 
+    z-index: 1;
+}
+.beScout__title{
+    font-family: "Zen Antique";
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.beScout__subtitle{
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.beScout_btn{
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 220px;
 }
