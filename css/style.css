@@ -1,0 +1,230 @@
+/* TYPOGRAPHY */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zen+Antique&display=swap");
+* {
+  font-family: "Josefin Sans"; }
+
+.ff-Zen {
+  font-family: "Zen Antique"; }
+
+.fs-5-6 {
+  font-size: 1rem; }
+
+@media all and (min-width: 768px) {
+  .fs-5-6 {
+    font-size: 1.125rem; } }
+
+.fs-7 {
+  font-size: 0.75rem; }
+
+/* HEADER */
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700; }
+  .nav-item a:hover {
+    text-decoration: underline; }
+
+.nav-item--active a {
+  color: #E7DF1A; }
+
+/* STRUCTURE */
+.min-100 {
+  min-height: 100vh; }
+
+.h-600 {
+  height: 600px; }
+
+.h-300 {
+  height: 300px; }
+
+.h-30 {
+  height: 30px; }
+
+.h-3 {
+  height: 3rem; }
+
+.zi-0 {
+  z-index: 0; }
+
+.zi-1 {
+  z-index: 1; }
+
+.p-40 {
+  padding: 40px; }
+
+.p-20 {
+  padding: 20px; }
+
+.m--4 {
+  margin: -1.5rem; }
+
+/* STYLING */
+/* BORDERS */
+.br-20 {
+  border-radius: 20px; }
+
+.br-s-20 {
+  border-radius: 20px 0 0 20px; }
+
+/* SHADOW */
+.myShadow {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+
+.shadow-inset {
+  box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5); }
+
+/* BACKGROUNDS */
+.fit-cover {
+  object-fit: cover; }
+
+.blur {
+  backdrop-filter: blur(20px); }
+
+.bg-blackTransparent {
+  background: rgba(34, 34, 34, 0.5); }
+
+.bg-myDark {
+  background: #222; }
+
+/* EFECTS */
+.translate-10 {
+  transform: translateY(10px); }
+
+/* a STYLING */
+.deco-none a {
+  text-decoration: none; }
+
+.text-white a {
+  color: #fff; }
+
+/* BUTTON */
+.btn {
+  padding: 10px 20px;
+  background-color: #16B2D9;
+  border-radius: 100px;
+  color: white;
+  border: none; }
+  .btn:hover {
+    transform: scale(1.1); }
+  .btn a {
+    color: white;
+    text-decoration: none; }
+
+/* MY ELEMENTS */
+.bannerHeight {
+  min-height: 300px;
+  height: 50vh; }
+
+.banner__textBoxWidth {
+  width: calc(100% - 50px); }
+
+.scouter {
+  display: grid;
+  grid-template-areas: "photo name" "totem name" "position position" "bio bio";
+  z-index: 1;
+  padding: 15px;
+  margin-top: 60px;
+  z-index: 1;
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .scouter {
+      max-width: calc(50% - 1rem); } }
+  @media all and (min-width: 992px) {
+    .scouter {
+      max-width: calc(33.33% - .5rem); } }
+  .scouter__photo {
+    margin-top: -80px;
+    width: 150px;
+    grid-area: photo; }
+  .scouter__name {
+    grid-area: name;
+    font-size: 24px;
+    overflow-wrap: break-word;
+    width: 100%; }
+  .scouter__totem {
+    mix-blend-mode: overlay;
+    margin-top: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px; }
+  .scouter__position {
+    margin: 10px 0;
+    grid-area: position;
+    font-size: 24px; }
+  .scouter__bio {
+    grid-area: bio; }
+
+.rama {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 300px;
+  margin-bottom: 65px; }
+  .rama__logo {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    background: white;
+    border-radius: 100%;
+    z-index: 1; }
+  .rama__name {
+    font-size: 2rem;
+    mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1; }
+  .rama__age {
+    font-size: 1.2rem;
+    mix-blend-mode: overlay;
+    width: auto;
+    z-index: 1; }
+
+.backCircle {
+  transform: translateY(50px);
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  height: calc(100vw/1);
+  max-height: 300px;
+  border-radius: 100%;
+  z-index: 0; }
+  @media all and (min-width: 576px) {
+    .backCircle {
+      height: calc(100vw/2); } }
+  @media all and (min-width: 768px) {
+    .backCircle {
+      height: calc(100vw/2); } }
+  @media all and (min-width: 992px) {
+    .backCircle {
+      height: calc(100vw/5); } }
+
+.backOrange {
+  background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0)); }
+
+.backYellow {
+  background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0)); }
+
+.backGreen {
+  background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0)); }
+
+.backBlue {
+  background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0)); }
+
+.backRed {
+  background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0)); }
+
+.beScout {
+  background: #222;
+  padding: 45px 50px;
+  z-index: 1; }
+  .beScout__title {
+    font-family: "Zen Antique";
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .beScout__subtitle {
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .beScout_btn {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 220px; }

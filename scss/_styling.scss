@@ -1,0 +1,45 @@
+/* BORDERS */
+.br-{
+	&20{
+		border-radius: 20px;
+	}
+	&s-20{
+		border-radius: 20px 0 0 20px;
+	}
+}
+/* SHADOW */
+.myShadow{
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.shadow-inset{
+	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* BACKGROUNDS */
+.fit-cover{
+	object-fit: cover;
+}
+.blur{
+	backdrop-filter: blur(20px);
+}
+.bg-{
+	&blackTransparent{
+		background: transparentize($black, 0.5);
+	}
+	&myDark{
+		background: $black;
+	}
+}
+
+/* EFECTS */
+.translate-10{
+	transform: translateY(10px)
+}
+
+/* a STYLING */
+.deco-none a{
+	text-decoration: none;
+}
+.text-white a{
+	color: #fff;
+}
