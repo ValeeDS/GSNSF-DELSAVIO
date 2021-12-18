@@ -1,0 +1,136 @@
+.banner{
+    &Height{
+        min-height: 300px;
+        height: 50vh;
+    }
+    &__textBoxWidth{
+        width: calc(100% - 50px)
+    }
+}
+
+.scouter{
+    display: grid;
+    grid-template-areas: "photo name" "totem name" "position position" "bio bio";
+    z-index: 1;
+    padding: 15px;
+    margin-top: 60px;
+    z-index: 1;
+    width: 100%;
+    @media all and (min-width: 768px){
+        max-width: calc(50% - 1rem);
+    }
+    @media all and (min-width: 992px){
+		max-width: calc(33.33% - .5rem);
+    }
+    &__photo{
+        margin-top: -80px;
+        width:150px;
+        grid-area: photo;
+    }
+    &__name{
+        grid-area:name;
+        font-size: 24px;
+        overflow-wrap: break-word;
+        width: 100%;
+    }
+    &__totem{
+        mix-blend-mode: overlay;
+        margin-top: 10px;
+        width: 150px;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__position{
+        margin: 10px 0;
+        grid-area: position;
+        font-size: 24px;
+    }
+    &__bio{
+        grid-area: bio;
+    }
+}
+.rama{
+	display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 300px;
+    margin-bottom: 65px;
+    &__logo{
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        background: $white;
+        border-radius:100%;
+        z-index: 1;
+    }
+    &__name{
+        font-size: 2rem;
+        mix-blend-mode: overlay;
+        width: auto;
+        z-index: 1;
+    }
+    &__age{
+        font-size: 1.2rem;
+        mix-blend-mode: overlay;
+        width: auto;
+        z-index: 1;
+    }
+}
+.backCircle{
+    transform: translateY(50px);
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: calc(100vw/1);
+    max-height: 300px;
+    border-radius: 100%;
+    z-index: 0;
+    @media all and (min-width: 576px){
+		height: calc(100vw/2);
+    }
+    @media all and (min-width: 768px){
+		height: calc(100vw/2);
+	}
+    @media all and (min-width: 992px){
+    	height: calc(100vw/5);
+	}
+}
+
+.back{
+    &Orange{
+        background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0));
+    }
+    &Yellow{
+        background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0));
+    }
+    &Green{
+        background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0));
+    }
+    &Blue{
+        background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0));
+    }
+    &Red{
+        background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0));
+    }
+}
+
+.beScout{
+    background: $black;
+    padding: 45px 50px; 
+    z-index: 1;
+    &__title{
+        font-family: $title_font;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    &_btn{
+        font-size: 24px;
+        font-weight: 600;
+        max-width: 220px;
+    }
+}

@@ -1,0 +1,40 @@
+.min-100{
+	min-height: 100vh;
+}
+
+.h-{
+	&600{
+		height: 600px;
+	}
+	&300{
+		height: 300px;
+	}
+	&30{
+		height: 30px;
+	}
+	&3{
+		height: 3rem;
+	}
+}
+
+.zi-{
+	&0{
+    	z-index: 0;
+	}
+	&1{
+    z-index: 1;
+	}
+}
+
+.p-{
+	&40{
+		padding: 40px;
+	}
+	&20{
+	padding: 20px;
+	}
+}
+
+.m--4{
+	margin: -1.5rem;
+}
