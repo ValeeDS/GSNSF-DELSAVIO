@@ -99,19 +99,19 @@
 
 .back{
     &Orange{
-        background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0));
+        background: orange;
     }
     &Yellow{
-        background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0));
+        background: yellow;
     }
     &Green{
-        background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0));
+        background: green;
     }
     &Blue{
-        background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0));
+        background: cyan;
     }
     &Red{
-        background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0));
+        background: red;
     }
 }
 
