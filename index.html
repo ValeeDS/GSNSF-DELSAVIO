@@ -3,16 +3,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio Web oficial del Grupo Scout Nuestra Señora de Fátima, ubicado en San Miguel, Buenos Aires. Se realizan actividades educativas al aire libre para niños entre 6 años hasta 21">
+    <meta name="keywords"  content="Scout, Grupo Scout, Parroquia, Actividades recreativas, Actividades educativas, Niños, Adolescentes">
+
+    <!-- OPEN GRAPH -->
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Grupo Scout Nuestra Señora de Fátima | San Miguel, Buenos Aires">
+    <meta itemprop="description" content="Sitio Web oficial del Grupo Scout Nuestra Señora de Fátima, ubicado en San Miguel, Buenos Aires. Se realizan actividades educativas al aire libre para niños entre 6 años hasta 21">
+    <meta itemprop="image" content="assets/img/banner/events.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://valeeds.github.io/GSNSF-DELSAVIO/eventos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grupo Scout Nuestra Señora de Fátima | San Miguel, Buenos Aires">
+    <meta property="og:description" content="Sitio Web oficial del Grupo Scout Nuestra Señora de Fátima, ubicado en San Miguel, Buenos Aires. Se realizan actividades educativas al aire libre para niños entre 6 años hasta 21">
+    <meta property="og:image" content="assets/img/banner/events.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grupo Scout Nuestra Señora de Fátima | San Miguel, Buenos Aires">
+    <meta name="twitter:description" content="Sitio Web oficial del Grupo Scout Nuestra Señora de Fátima, ubicado en San Miguel, Buenos Aires. Se realizan actividades educativas al aire libre para niños entre 6 años hasta 21">
+    <meta name="twitter:image" content="assets/img/banner/events.jpg">
+
+    <!-- END GRAPH -->
+
     <title>Grupo Scout Nuestra Señora de Fátima</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.png">
+
 </head>
 <body class="min-100 d-flex flex-column">
-    <!-- Desafío SEO -->
     <!--- Header --->
-    <div class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
+    <header class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
         <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
             <div class="container-fluid">
                 <!-- Logo -->
@@ -37,76 +65,76 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <!--- End Header --->
 
     <!--- Content --->
-    <div class="flex-grow-1 d-flex flex-column">
+    <main class="flex-grow-1 d-flex flex-column">
         <!--- Banner --->
-        <div class="w-100 d-flex justify-content-end align-items-center bannerHeight">
+        <section class="w-100 d-flex justify-content-end align-items-center bannerHeight">
             <div class="position-absolute py-4 px-5 text-white bg-blackTransparent blur shadow br-s-20 banner__textBoxWidth wow animate__animated animate__fadeInRight">
                 <div class="fs-1 ff-Zen">Eventos</div>
                 <div class="fs-5-6">Acá vas a poder ver los eventos programados del grupo y las actividades parroquiales</div>
             </div>
             <!--- imagen --->
             <img class="fit-cover w-100 h-100" src="assets/img/banner/home.jpg" alt="Home">
-        </div>
+        </section>
 
         <!--- Page content --->
-        <div class="flex-grow-1 w-100 position-relative">
+        <section class="flex-grow-1 w-100 position-relative">
             <img src="assets/img/bg/home.jpg" alt="Background Home" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
             <div class="zi-1 position-relative">
                 <!-- Ramas -->
                 <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 w-100 m-0 justify-content-center wow animate__animated animate__fadeInUp">
-                    <div class="pt-4 rama flex-column flex-fill">
+                    <article class="pt-4 rama flex-column flex-fill">
                         <div class="w-100 h-100 bg-blackTransparent blur position-absolute zi-1 top-0"></div>
                         <div class="backCircle rounded-circle backOrange position-absolute"></div>
                         <img class="rama__logo" src="assets/img/castores.png">
-                        <div class="rama__name">Castores</div>
+                        <h2 class="rama__name">Castores</h2>
                         <p class="rama__age">5 a 7 años</p>
-                    </div>
-                    <div class="pt-4 rama flex-column flex-fill">
+                    </article>
+                    <article class="pt-4 rama flex-column flex-fill">
                         <div class="w-100 h-100 bg-blackTransparent blur position-absolute zi-1 top-0"></div>
                         <div class="backCircle rounded-circle backYellow position-absolute"></div>
                         <img class="rama__logo" src="assets/img/lobatos.gif">
-                        <div class="rama__name">Lobatos</div>
+                        <h2 class="rama__name">Lobatos</h2>
                         <p class="rama__age">7 a 11 años</p>
-                    </div>
-                    <div class="pt-4 rama flex-column flex-fill">
+                    </article>
+                    <article class="pt-4 rama flex-column flex-fill">
                         <div class="w-100 h-100 bg-blackTransparent blur position-absolute zi-1 top-0"></div>
                         <div class="backCircle rounded-circle backGreen position-absolute"></div>
                         <img class="rama__logo" src="assets/img/scouts.png">
-                        <div class="rama__name">Scouts</div>
+                        <h2 class="rama__name">Scouts</h2>
                         <p class="rama__age">11 a 14 años</p>
-                    </div>
-                    <div class="pt-4 rama flex-column flex-fill">
+                    </article>
+                    <article class="pt-4 rama flex-column flex-fill">
                         <div class="w-100 h-100 bg-blackTransparent blur position-absolute zi-1 top-0"></div>
                         <div class="backCircle rounded-circle backBlue position-absolute"></div>
                         <img class="rama__logo" src="assets/img/raiders.jpg">
-                        <div class="rama__name">Raiders</div>
+                        <h2 class="rama__name">Raiders</h2>
                         <p class="rama__age">14 a 18 años</p>
-                    </div>
-                    <div class="pt-4 rama flex-column flex-fill">
+                    </article>
+                    <article class="pt-4 rama flex-column flex-fill">
                         <div class="w-100 h-100 bg-blackTransparent blur position-absolute zi-1 top-0"></div>
                         <div class="backCircle rounded-circle backRed position-absolute"></div>
                         <img class="rama__logo" src="assets/img/rovers.jpg">
-                        <div class="rama__name">Rovers</div>
+                        <h2 class="rama__name">Rovers</h2>
                         <p class="rama__age">18 a 21 años</p>
-                    </div>
+                    </article>
                 </div>
                 <!-- End ramas -->
-                <div class="text-white m-0 row wow animate__animated animate__fadeInUp">
+                <section class="text-white m-0 row wow animate__animated animate__fadeInUp">
                     <div class="beScout col-12 col-md-6 flex-column align-items-center text-center">
-                        <div class="beScout__title">Quiero ser Scout</div>
-                        <div class="beScout__subtitle">Formá parte de nuestro Grupo Scout</div>
-                        <div class="beScout_btn btn"><a href="">Contacto</a></div>
+                        <h1 class="beScout__title">Quiero ser Scout</h1>
+                        <h3 class="beScout__subtitle">Formá parte de nuestro Grupo Scout</h3>
+                        <button type="button" class="beScout_btn btn">Contacto<a href="./contacto.html"></a></button>
                     </div>
                     <div class="beScout col-12 col-md-6 flex-column align-items-center text-center">
-                        <div class="beScout__title">Soy Scout</div>
-                        <div class="beScout__subtitle">Ya soy parte del GS Nuestra Señora de Fátima</div>
-                        <div class="beScout_btn btn"><a href="">Mi cuenta</a></div>
+                        <h1 class="beScout__title">Soy Scout</h1>
+                        <h3 class="beScout__subtitle">Ya soy parte del GS Nuestra Señora de Fátima</h3>
+                        <button type="button" class="beScout_btn btn" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
                     </div>
-                </div>
+                </section>
                 <div class="row bg-blackTransparent blur shadow text-white my-5 mx-0 p-5 deco-none wow animate__animated animate__fadeInUp">
                     <div class="col-md-6 d-flex flex-column">
                         <div class="fs-1 ff-Zen mb-4">Contactanos</div>
@@ -117,12 +145,12 @@
                     <iframe class="col-md-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" width="600" height="190" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     <!--- End content --->
 
     <!--- Footer --->
-    <div class="d-flex flex-row justify-content-end align-items-center position-relative bottom-0 w-100 px-1 text-white bg-myDark shadow fs-7">
+    <footer class="d-flex flex-row justify-content-end align-items-center position-relative bottom-0 w-100 px-1 text-white bg-myDark shadow fs-7">
         <div class="text-center flex-fill py-1 wow animate__animated animate__fadeInUp">
             <p class="m-0">Grupo Scout Nuestra Señora de Fátima<br>Desarrollado por Valeria Del Savio</p>
         </div>
@@ -130,7 +158,7 @@
             <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
             <a href="https://www.facebook.com/groups/150442284984459"><img class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
         </div>
-    </div>
+    </footer>
     <!--- End footer --->
 
     <!-- MODAL -->
