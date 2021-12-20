@@ -199,19 +199,19 @@
       height: calc(100vw/5); } }
 
 .backOrange {
-  background: linear-gradient(to bottom, orange 70%, rgba(255, 255, 255, 0)); }
+  background: orange; }
 
 .backYellow {
-  background: linear-gradient(to bottom, yellow 70%, rgba(255, 255, 255, 0)); }
+  background: yellow; }
 
 .backGreen {
-  background: linear-gradient(to bottom, green 70%, rgba(255, 255, 255, 0)); }
+  background: green; }
 
 .backBlue {
-  background: linear-gradient(to bottom, cyan 70%, rgba(255, 255, 255, 0)); }
+  background: cyan; }
 
 .backRed {
-  background: linear-gradient(to bottom, red 70%, rgba(255, 255, 255, 0)); }
+  background: red; }
 
 .beScout {
   background: #222;
