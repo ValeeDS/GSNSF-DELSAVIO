@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zen+Antique&display=swap');
 
 *{
-	font-family: $body_font;
+	font-family: map-get($font-families, body_font);
 }
 .ff-Zen{
-	font-family: $title_font;
+	font-family: map-get($font-families, title_font);
 }
 .fs-{
 	&5-6{

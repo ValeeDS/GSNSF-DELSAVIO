@@ -3,5 +3,34 @@ $sec_color: #E7DF1A;
 $black: #222;
 $white: white;
 
-$body_font: "Josefin Sans";
-$title_font: "Zen Antique";
+$font-families: (
+	body_font: "Josefin Sans",
+	title_font: "Zen Antique",
+);
+
+$colors: (
+	Orange: orange,
+	Yellow: yellow,
+	Green: green,
+	Blue: blue,
+	Red: red,
+);
+
+@mixin func($map, $class-name, $attribute: false){
+	@each $key, $value in $map {
+	    .#{$class-name}#{$key}{
+	    	@if $attribute == "bg"{
+				background: $value;
+	    	}
+	    	@if $attribute == "height"{
+	    		height: $value;
+	    	}
+	    	@if $attribute == "index"{
+	    		z-index: $value;
+	    	}
+	    	@if $attribute == "padding"{
+	    		padding: $value;
+	    	}
+	    }
+	}
+}
