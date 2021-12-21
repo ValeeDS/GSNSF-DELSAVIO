@@ -50,10 +50,10 @@
   z-index: 1; }
 
 .p-40 {
-  padding: 40px; }
+  padding: 40; }
 
 .p-20 {
-  padding: 20px; }
+  padding: 20; }
 
 .m--4 {
   margin: -1.5rem; }
@@ -168,16 +168,13 @@
     background: white;
     border-radius: 100%;
     z-index: 1; }
-  .rama__name {
+  .rama__name, .rama__age {
     font-size: 2rem;
     mix-blend-mode: overlay;
     width: auto;
     z-index: 1; }
   .rama__age {
-    font-size: 1.2rem;
-    mix-blend-mode: overlay;
-    width: auto;
-    z-index: 1; }
+    font-size: 1.2rem; }
 
 .backCircle {
   transform: translateY(50px);
@@ -198,19 +195,19 @@
     .backCircle {
       height: calc(100vw/5); } }
 
-.backOrange {
+.back-Orange {
   background: orange; }
 
-.backYellow {
+.back-Yellow {
   background: yellow; }
 
-.backGreen {
+.back-Green {
   background: green; }
 
-.backBlue {
-  background: cyan; }
+.back-Blue {
+  background: blue; }
 
-.backRed {
+.back-Red {
   background: red; }
 
 .beScout {
