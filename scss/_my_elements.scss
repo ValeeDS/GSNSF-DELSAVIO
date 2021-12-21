@@ -95,7 +95,7 @@
 	}
 }
 
-@include func($colors, "back-", "bg");
+@include func($colors, "back", "bg");
 
 .beScout{
     background: $black;

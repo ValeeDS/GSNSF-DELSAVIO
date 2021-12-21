@@ -195,19 +195,19 @@
     .backCircle {
       height: calc(100vw/5); } }
 
-.back-Orange {
+.backOrange {
   background: orange; }
 
-.back-Yellow {
+.backYellow {
   background: yellow; }
 
-.back-Green {
+.backGreen {
   background: green; }
 
-.back-Blue {
+.backBlue {
   background: blue; }
 
-.back-Red {
+.backRed {
   background: red; }
 
 .beScout {
