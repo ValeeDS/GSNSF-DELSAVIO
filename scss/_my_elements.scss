@@ -71,10 +71,8 @@
         z-index: 1;
     }
     &__age{
+        @extend .rama__name;
         font-size: 1.2rem;
-        mix-blend-mode: overlay;
-        width: auto;
-        z-index: 1;
     }
 }
 .backCircle{
@@ -97,30 +95,14 @@
 	}
 }
 
-.back{
-    &Orange{
-        background: orange;
-    }
-    &Yellow{
-        background: yellow;
-    }
-    &Green{
-        background: green;
-    }
-    &Blue{
-        background: cyan;
-    }
-    &Red{
-        background: red;
-    }
-}
+@include func($colors, "back", "bg");
 
 .beScout{
     background: $black;
     padding: 45px 50px; 
     z-index: 1;
     &__title{
-        font-family: $title_font;
+        font-family: map-get($font_families,title_font);
         font-size: 24px;
         margin-bottom: 30px;
     }
