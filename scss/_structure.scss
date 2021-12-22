@@ -15,8 +15,8 @@ $index: (
 );
 
 $paddings: (
-	40: 40,
-	20: 20,
+	40: 40px,
+	20: 20px,
 );
 
 @include func($heights, "h-", "height");
