@@ -28,9 +28,6 @@
   color: #E7DF1A; }
 
 /* STRUCTURE */
-.min-100 {
-  min-height: 100vh; }
-
 .h-600 {
   height: 600px; }
 
@@ -50,10 +47,10 @@
   z-index: 1; }
 
 .p-40 {
-  padding: 40; }
+  padding: 40px; }
 
 .p-20 {
-  padding: 20; }
+  padding: 20px; }
 
 .m--4 {
   margin: -1.5rem; }
@@ -205,7 +202,7 @@
   background: green; }
 
 .backBlue {
-  background: blue; }
+  background: cyan; }
 
 .backRed {
   background: red; }
