@@ -13,13 +13,10 @@ $index: (
 $paddings: (
 	40: 40px,
 	20: 20px,
-<<<<<<< HEAD
-=======
 );
 
 $margins: (
 	-4: -1.5rem,
->>>>>>> feature
 );
 
 @include func($heights, "h-", "height");
