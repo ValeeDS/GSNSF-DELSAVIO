@@ -11,8 +11,12 @@ $index: (
 );
 
 $paddings: (
-	40: 40,
-	20: 20,
+	40: 40px,
+	20: 20px,
+);
+
+$margins: (
+	-4: -1.5rem,
 );
 
 @include func($heights, "h-", "height");
@@ -21,6 +25,4 @@ $paddings: (
 
 @include func($paddings, "p-", "padding");
 
-.m--4{
-	margin: -1.5rem;
-}
+@include func($margins, "m-", "margin");
