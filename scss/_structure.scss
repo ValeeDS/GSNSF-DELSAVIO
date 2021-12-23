@@ -1,7 +1,3 @@
-.min-100{
-	min-height: 100vh;
-}
-
 $heights: (
 	600: 600px,
 	300: 300px,
@@ -17,6 +13,13 @@ $index: (
 $paddings: (
 	40: 40px,
 	20: 20px,
+<<<<<<< HEAD
+=======
+);
+
+$margins: (
+	-4: -1.5rem,
+>>>>>>> feature
 );
 
 @include func($heights, "h-", "height");
@@ -25,6 +28,4 @@ $paddings: (
 
 @include func($paddings, "p-", "padding");
 
-.m--4{
-	margin: -1.5rem;
-}
+@include func($margins, "m-", "margin");
