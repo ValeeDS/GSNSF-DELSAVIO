@@ -1,8 +1,9 @@
 # Node_modules folder
 node_modules
 
-# SEO file
+# Office files
 *.docx
+*.xlsx
 
 # Windows thumbnail cache files
 Thumbs.db
