@@ -1,3 +1,5 @@
+$blur: false;
+
 /* BORDERS */
 .br-{
 	&20{
@@ -19,16 +21,19 @@
 .fit-cover{
 	object-fit: cover;
 }
-.blur{
-	backdrop-filter: blur(20px);
-}
 .bg-{
 	&blackTransparent{
-		background: transparentize($black, 0.5);
+		background: transparentize($black, 0.05);
+		@supports (backdrop-filter: blur(20px)){
+			background: transparentize($black, 0.5);
+		}
 	}
 	&myDark{
 		background: $black;
 	}
+}
+.blur{
+	backdrop-filter: blur(20px);
 }
 
 /* EFECTS */

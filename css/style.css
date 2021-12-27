@@ -74,14 +74,17 @@
 .fit-cover {
   object-fit: cover; }
 
-.blur {
-  backdrop-filter: blur(20px); }
-
 .bg-blackTransparent {
-  background: rgba(34, 34, 34, 0.5); }
+  background: rgba(34, 34, 34, 0.95); }
+  @supports (backdrop-filter: blur(20px)) {
+    .bg-blackTransparent {
+      background: rgba(34, 34, 34, 0.5); } }
 
 .bg-myDark {
   background: #222; }
+
+.blur {
+  backdrop-filter: blur(20px); }
 
 /* EFECTS */
 .translate-10 {
@@ -117,7 +120,7 @@
 
 .scouter {
   display: grid;
-  grid-template-areas: "photo name" "totem name" "position position" "bio bio";
+  grid-template-areas: "photo name" "photo position" "totem position" "bio bio";
   z-index: 1;
   padding: 15px;
   margin-top: 60px;
@@ -139,6 +142,7 @@
     overflow-wrap: break-word;
     width: 100%; }
   .scouter__totem {
+    grid-area: totem;
     mix-blend-mode: overlay;
     margin-top: 10px;
     width: 150px;
@@ -156,8 +160,9 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  height: 300px;
-  margin-bottom: 65px; }
+  height: 300px; }
+  .rama:last-child {
+    margin-bottom: 65px; }
   .rama__logo {
     height: 180px;
     width: 180px;
