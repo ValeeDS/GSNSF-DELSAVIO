@@ -118,11 +118,10 @@
 
 /* MY ELEMENTS */
 .bannerHeight {
-  min-height: 300px;
-  height: 50vh; }
+  height: 300px; }
 
 .banner__textBoxWidth {
-  width: calc(100% - 50px); }
+  width: calc(100vw - 50px); }
 
 .scouter {
   display: grid;

@@ -1,10 +1,9 @@
 .banner{
     &Height{
-        min-height: 300px;
-        height: 50vh;
+        height: 300px;
     }
     &__textBoxWidth{
-        width: calc(100% - 50px)
+        width: calc(100vw - 50px)
     }
 }
 
