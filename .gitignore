@@ -4,6 +4,8 @@ node_modules
 # Office files
 *.docx
 *.xlsx
+*.pdf
+*.txt
 
 # Windows thumbnail cache files
 Thumbs.db
