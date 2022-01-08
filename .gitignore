@@ -1,10 +1,6 @@
 # Node_modules folder
 node_modules
 
-# Office files
-*.docx
-*.xlsx
-
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
