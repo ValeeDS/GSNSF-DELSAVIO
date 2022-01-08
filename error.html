@@ -1,29 +1,205 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
+    <meta name="keywords"  content="Scout, Grupo Scout, Parroquia, Contacto">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <style type="text/css">
-      .noQuieroResize{
-        resize: none !important;
-      }
-    </style>
-    <title>Formularios</title>
-  </head>
-  <body>
-    <div class="container mt-5">
-        <h1 class="mb-4">Lo sentimos ;(</h1>
-        <p>No podemos enviar tu mensaje en este momento.</p>
+    <!-- OPEN GRAPH -->
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
+    <meta itemprop="description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
+    <meta itemprop="image" content="assets/img/banner/contact.jpg">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://valeeds.github.io/GSNSF-DELSAVIO/eventos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
+    <meta property="og:description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
+    <meta property="og:image" content="assets/img/banner/contact.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
+    <meta name="twitter:description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
+    <meta name="twitter:image" content="assets/img/banner/contact.jpg">
+
+    <!-- END GRAPH -->
+
+    <title>Contacto | GSNSF</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="min-vh-100 d-flex flex-column">
+    <!--- Header --->
+    <header class="sticky-top p-0 fs-5 bg-myDark shadow animate__animated animate__slideInDown">
+        <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand h-100 p-0" href="index.html"><img loading="lazy" class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.png" alt="Logo"></a>
+                <!-- Burger mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-lg-evenly w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html">Home</a></li>
+                        <li class="nav-item">
+                            <a href="historia.html">Nuestra Historia</a></li>
+                        <li class="nav-item">
+                            <a href="dirigentes.html">Dirigentes</a></li>
+                        <li class="nav-item">
+                            <a href="eventos.html">Eventos</a></li>
+                        <li class="nav-item nav-item--active">
+                            <a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <!-- My Account button -->
+                    <button type="button" class="fw-bold w-auto flex-shrink-0 mb-2 mb-lg-0 btn btn-primary animate__animated animate__slideInDown" data-bs-toggle="modal" data-bs-target="#logInModal">Mi Cuenta</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--- End Header --->
+
+    <!--- Content --->
+    <main class="flex-grow-1 d-flex flex-column">
+        <!--- Banner --->
+        <section class="w-100 d-flex justify-content-end align-items-center bannerHeight">
+            <div class="position-absolute py-4 px-5 text-white bg-blackTransparent blur shadow br-s-20 banner__textBoxWidth wow animate__animated animate__fadeInRight">
+                <h1 class="fs-1 ff-Zen">Contacto</h1>
+                <p class="fs-5-6">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario.</p>
+            </div>
+            <!--- imagen --->
+            <img loading="lazy" class="fit-cover w-100 h-100" srcset="assets/img/banner/contact-sm.jpg 576w, assets/img/banner/contact-md.jpg 768w, assets/img/banner/contact-lg.jpg 992w, assets/img/banner/contact-xl.jpg 1280w" src="assets/img/banner/contact.jpg" alt="contacto">
+        </section>
+
+        <!--- Page content --->
+        <section class="flex-grow-1 w-100 p-4 position-relative">
+            <img loading="lazy" src="assets/img/bg/contact.jpg" alt="Background Contacto" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
+            <div class="position-relative zi-1 bg-blackTransparent myShadow blur br-20 p-20">
+                <div class="row text-white">
+                    <section class="col-md d-flex flex-column justify-content-center p-4">
+                        <!-- Form -->
+                        <h4 class="fs-1 ff-Zen mb-5">¡Perdón!</h4>
+                        <p class="flex-grow-1 fs-5">Hubo un error al enviar tu mensaje, por favor intentá nuevamente en unos minutos. Disculpá las molestias</p>
+                        <!-- End form -->
+                    </section>
+                    <section class="col-md text-center wow animate__animated animate__fadeInUp">
+                        <iframe class="w-100 br-20 h-300"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26296.153678166134!2d-58.72762628573797!3d-34.52774127941164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd5a9157c3a9%3A0x26889f80bad2d23!2sCallao%20960%2C%20San%20Miguel%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1636293434844!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <p>Callao 960, San Miguel - Buenos Aires</p>
+                        <address class="row justify-content-center align-items-center">
+                            <div class="h-3 col-12 col-md-auto">
+                                <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img loading="lazy" class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
+                                <a href="https://www.facebook.com/groups/150442284984459"><img loading="lazy" class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
+                            </div>
+                            <div class="h-auto col-12 col-md-auto deco-none text-white mt-3 mt-md-0">
+                                <a class="d-block" href="tel:+541123456789">+54 9 11 2345-6789</a>
+                                <a class="d-block" href="mailto:gsnsfsanmiguel@gmail.com">gsnsfsanmiguel@gmail.com</a>
+                            </div>
+                        </address>
+                    </section>
+                </div>
+                <!--- Form --->
+            </div>
+        </section>
+    </main>
+    <!--- End content --->
+    
+    <!--- Footer --->
+    <footer class="d-flex flex-row justify-content-end align-items-center position-relative bottom-0 w-100 px-1 text-white bg-myDark shadow fs-7">
+        <div class="text-center flex-fill py-1 wow animate__animated animate__fadeInUp">
+            <p class="m-0">Grupo Scout Nuestra Señora de Fátima</p>
+            <p class="m-0">Desarrollado por Valeria Del Savio</p>
+        </div>
+        <div class="h-30 wow animate__animated animate__fadeInUp">
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+    <!--- End footer --->
+
+    <!-- MODAL -->
+    <!-- Log In -->
+    <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="logIn" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white bg-blackTransparent blur shadow border-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logIn">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer justify-content-evenly">
+                    <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Iniciar Sesión</button>
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal">Registrarse</button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-12 mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input name="" type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input name="" type="password" class="form-control  rounded-pill" id="password">
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-  </body>
+    <!-- Register -->
+    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="register" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white bg-blackTransparent blur shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="register">Registrarse</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer justify-content-evenly">
+                    <button class="btn btn-primary" data-bs-target="#logInModal" data-bs-toggle="modal" data-bs-dismiss="modal">Iniciar Sesión</button>
+                    <button class="btn btn-primary" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" disabled>Registrarse</button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="first-name" class="form-label">Nombre</label>
+                            <input name="" type="text" class="form-control  rounded-pill" id="first-name">
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="last-name" class="form-label">Apellido</label>
+                            <input name="" type="text" class="form-control  rounded-pill" id="last-name">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Email</label>
+                            <input name="" type="email" class="form-control  rounded-pill" id="email">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="form-label">Contraseña</label>
+                            <input name="" type="password" class="form-control  rounded-pill" id="password">
+                        </div>
+                        <div class="col-12 mt-4 text-center">
+                            <button type="submit" class="btn btn-primary">Registrarme</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
