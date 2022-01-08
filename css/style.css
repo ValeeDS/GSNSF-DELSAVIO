@@ -84,7 +84,7 @@
 .bg-myDark {
   background: #222; }
 
-.blur {
+.blur, .rama__background svg {
   backdrop-filter: blur(20px); }
 
 /* EFECTS */
@@ -168,7 +168,39 @@
   z-index: 1;
   height: 350px;
   color: white;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
+  .rama:last-child {
+    margin-bottom: 100px; }
+  @media all and (max-width: 768px) {
+    .rama:last-child .rama__bottom {
+      background: transparent; } }
+  @media all and (min-width: 768px) {
+    .rama:nth-last-child(-n+2) .rama__bottom {
+      background: transparent; }
+    .rama:nth-child(1) .rama__background svg {
+      left: calc((-100vw/3)*0); }
+    .rama:nth-child(2) .rama__background svg {
+      left: calc((-100vw/3)*1); }
+    .rama:nth-child(3) .rama__background svg {
+      left: calc((-100vw/3)*2); }
+    .rama:nth-child(4) .rama__background svg {
+      left: calc((-100vw/3)*3); }
+    .rama:nth-child(5) .rama__background svg {
+      left: calc((-100vw/3)*4); } }
+  @media all and (min-width: 992px) {
+    .rama .rama__bottom {
+      background: transparent; }
+    .rama:nth-child(1) .rama__background svg {
+      left: calc((-100vw/5)*0); }
+    .rama:nth-child(2) .rama__background svg {
+      left: calc((-100vw/5)*1); }
+    .rama:nth-child(3) .rama__background svg {
+      left: calc((-100vw/5)*2); }
+    .rama:nth-child(4) .rama__background svg {
+      left: calc((-100vw/5)*3); }
+    .rama:nth-child(5) .rama__background svg {
+      left: calc((-100vw/5)*4); } }
   .rama__logo {
     height: 180px;
     width: 180px;
@@ -193,17 +225,20 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 250px;
+    height: 260px;
     width: 100%;
-    z-index: 2; }
-    .rama__background::after {
-      content: '';
+    z-index: 2;
+    line-height: 0; }
+    .rama__background svg {
       position: absolute;
-      top: 250px;
-      width: 100%;
+      top: 260px;
+      display: block;
+      width: calc(100vw);
       height: 50px;
-      border-bottom-right-radius: 100%;
-      border-bottom-left-radius: 100%; }
+      fill: rgba(34, 34, 34, 0.95); }
+      @supports (backdrop-filter: blur(20px)) {
+        .rama__background svg {
+          fill: rgba(34, 34, 34, 0.5); } }
   .rama__bottom {
     position: absolute;
     right: 0px;
@@ -211,56 +246,6 @@
     height: 100px;
     width: 100%;
     z-index: 0; }
-
-/*
-.rama{
-	display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    height: 300px;
-    color: $white;
-    &:last-child(){
-        margin-bottom: 65px;
-    }
-    &__logo{
-        height: 180px;
-        width: 180px;
-        object-fit: cover;
-        background: $white;
-        border-radius:100%;
-        z-index: 1;
-    }
-    &__name{
-        font-size: 2rem;
-        mix-blend-mode: overlay;
-        width: auto;
-        z-index: 1;
-    }
-    &__age{
-        @extend .rama__name;
-        font-size: 1.2rem;
-    }
-}
-*/
-.backCircle {
-  transform: translateY(50px);
-  display: inline-block;
-  width: 100%;
-  max-width: 300px;
-  height: calc(100vw/1);
-  max-height: 300px;
-  border-radius: 100%;
-  z-index: 0; }
-  @media all and (min-width: 576px) {
-    .backCircle {
-      height: calc(100vw/2); } }
-  @media all and (min-width: 768px) {
-    .backCircle {
-      height: calc(100vw/2); } }
-  @media all and (min-width: 992px) {
-    .backCircle {
-      height: calc(100vw/5); } }
 
 .backOrange {
   fill: orange; }
