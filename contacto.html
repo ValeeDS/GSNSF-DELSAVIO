@@ -87,29 +87,29 @@
                 <div class="row text-white">
                     <section class="col-md">
                         <!-- Form -->
-                        <form class="row wow animate__animated animate__fadeInUp">
+                        <form class="row wow animate__animated animate__fadeInUp needs-validation" method="POST" action="email.php">
                             <div class="mb-3 col-md-6">
                                 <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control rounded-pill" id="name" placeholder="Nombre">
+                                <input name="name" type="text" class="form-control rounded-pill" id="name" placeholder="Nombre" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="last-name" class="form-label">Apellido</label>
-                                <input type="text" class="form-control rounded-pill" id="last-name" placeholder="Apellido">
+                                <input name="last-name" type="text" class="form-control rounded-pill" id="last-name" placeholder="Apellido" required>
                             </div>
                             <div class="mb-3 col-md-7">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control rounded-pill" id="email" placeholder="nombre@ejemplo.com">
+                                <input name="email" type="email" class="form-control rounded-pill" id="email" placeholder="nombre@ejemplo.com" required>
                             </div>
                             <div class="mb-3 col-md-5">
                                 <label for="phone" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control rounded-pill" id="phone" placeholder="Teléfono">
+                                <input name="phone" type="tel" class="form-control rounded-pill" id="phone" placeholder="Teléfono" required>
                             </div>
                             <div class="mb-3 col-12">
                                 <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje"></textarea>
+                                <textarea name="message" class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje" required></textarea>
                             </div>
                             <div class="mb-3 col-12 text-center">
-                                <input class="form__btn btn" type="submit" name="" value="ENVIAR">
+                                <button class="form__btn btn" type="submit"> ENVIAR</button>
                             </div>
                         </form>
                         <!-- End form -->
@@ -165,11 +165,11 @@
                     <form class="row">
                         <div class="col-12 mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
+                            <input name="" type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control  rounded-pill" id="password">
+                            <input name="" type="password" class="form-control  rounded-pill" id="password">
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
@@ -195,19 +195,19 @@
                     <form class="row">
                         <div class="col-12 col-md-6 mb-3">
                             <label for="first-name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control  rounded-pill" id="first-name">
+                            <input name="" type="text" class="form-control  rounded-pill" id="first-name">
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                             <label for="last-name" class="form-label">Apellido</label>
-                            <input type="text" class="form-control  rounded-pill" id="last-name">
+                            <input name="" type="text" class="form-control  rounded-pill" id="last-name">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="form-label">Email</label>
-                            <input type="email" class="form-control  rounded-pill" id="email">
+                            <input name="" type="email" class="form-control  rounded-pill" id="email">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="form-label">Contraseña</label>
-                            <input type="password" class="form-control  rounded-pill" id="password">
+                            <input name="" type="password" class="form-control  rounded-pill" id="password">
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Registrarme</button>
