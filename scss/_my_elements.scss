@@ -50,6 +50,67 @@
     }
 }
 .rama{
+    padding-top:15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: 350px;
+    color: $white;
+    align-items: center;
+    &__logo{
+        height: 180px;
+        width: 180px;
+        object-fit: cover;
+        background: $white;
+        border-radius: 100%;
+        box-shadow: inset 0 0 20px $black;
+        z-index: 3;
+    }
+    &__name{
+        font-size: 2rem;
+        mix-blend-mode: overlay;
+        width: auto;
+        z-index: 3;
+    }
+    &__age{
+        @extend .rama__name;
+        font-size: 1.2rem;
+    }
+    &__circle{
+        position:absolute;
+        top: 50px;
+        z-index: 1;
+        width: 300px;
+    }
+    &__background{
+        position:absolute;
+        top: 0px;
+        right: 0px;
+        height: 250px;
+        width: 100%;
+        z-index:2;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 250px;
+            width: 100%;
+            height: 50px;
+            border-bottom-right-radius: 100%;
+            border-bottom-left-radius: 100%;        }
+    }
+    &__bottom{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 100px;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+/*
+.rama{
 	display: flex;
     align-items: center;
     position: relative;
@@ -78,6 +139,7 @@
         font-size: 1.2rem;
     }
 }
+*/
 .backCircle{
     transform: translateY(50px);
     display: inline-block;
