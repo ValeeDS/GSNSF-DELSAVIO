@@ -20,7 +20,7 @@ $colors: (
 	@each $key, $value in $map {
 	    .#{$class-name}#{$key}{
 	    	@if $attribute == "bg"{
-				background: $value;
+				fill: $value;
 	    	}
 	    	@if $attribute == "height"{
 	    		height: $value;
