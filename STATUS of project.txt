@@ -1,0 +1,2 @@
+Adding SVG's to index.html
+Adding email.php file
