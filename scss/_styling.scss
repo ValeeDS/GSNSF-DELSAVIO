@@ -1,5 +1,3 @@
-$blur: false;
-
 /* BORDERS */
 .br-{
 	&20{
@@ -47,4 +45,10 @@ $blur: false;
 }
 .text-white a{
 	color: #fff;
+}
+
+/* FORMS */
+.form-control:focus{
+    border-color: $sec_color;
+    box-shadow: 0 0 0 0.25rem transparentize($sec_color, 0.75);
 }
