@@ -1,11 +1,7 @@
 # Node_modules folder
 node_modules
 
-# Office files
-*.docx
-*.xlsx
-*.pdf
-*.txt
+# Do not ignore special files
 
 # Windows thumbnail cache files
 Thumbs.db

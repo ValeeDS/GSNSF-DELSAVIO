@@ -1,30 +1,40 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
     <meta name="keywords"  content="Scout, Grupo Scout, Parroquia, Contacto">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H58JQV4VL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7H58JQV4VL');
+    </script>
+
     <!-- OPEN GRAPH -->
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
     <meta itemprop="description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
-    <meta itemprop="image" content="assets/img/banner/contact.jpg">
+    <meta itemprop="image" content="assets/img/banner/contact.webp">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://valeeds.github.io/GSNSF-DELSAVIO/eventos.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
     <meta property="og:description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
-    <meta property="og:image" content="assets/img/banner/contact.jpg">
+    <meta property="og:image" content="assets/img/banner/contact.webp">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contacto | Grupo Scout Nuestra Señora de Fátima">
     <meta name="twitter:description" content="En esta página vas a encontrar un formulario de contacto y las redes sociales del Grupo Scout.">
-    <meta name="twitter:image" content="assets/img/banner/contact.jpg">
+    <meta name="twitter:image" content="assets/img/banner/contact.webp">
 
     <!-- END GRAPH -->
 
@@ -44,7 +54,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark container-xl py-0">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand h-100 p-0" href="index.html"><img loading="lazy" class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.png" alt="Logo"></a>
+                <a class="navbar-brand h-100 p-0" href="index.html"><img class="h-100 translate-10 shadow rounded-circle" src="assets/img/logo.webp" alt="Logo"></a>
                 <!-- Burger mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
@@ -77,17 +87,17 @@
                 <p class="fs-5-6">Si tenés dudas, podés contactarnos por nuestras redes o completando este formulario.</p>
             </div>
             <!--- imagen --->
-            <img loading="lazy" class="fit-cover w-100 h-100" srcset="assets/img/banner/contact-sm.jpg 576w, assets/img/banner/contact-md.jpg 768w, assets/img/banner/contact-lg.jpg 992w, assets/img/banner/contact-xl.jpg 1280w" src="assets/img/banner/contact.jpg" alt="contacto">
+            <img loading="lazy" class="fit-cover w-100 h-100" srcset="assets/img/banner/contact-sm.webp 576w, assets/img/banner/contact-md.webp 768w, assets/img/banner/contact-lg.webp 992w, assets/img/banner/contact-xl.webp 1280w" src="assets/img/banner/contact.webp" alt="contacto">
         </section>
 
         <!--- Page content --->
         <section class="flex-grow-1 w-100 p-4 position-relative">
-            <img loading="lazy" src="assets/img/bg/contact.jpg" alt="Background Contacto" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
+            <img loading="lazy" src="assets/img/bg/contact.webp" alt="Background Contacto" class="w-100 h-100 position-absolute top-0 start-0 zi-0 fit-cover">
             <div class="position-relative zi-1 bg-blackTransparent myShadow blur br-20 p-20">
                 <div class="row text-white">
                     <section class="col-md">
                         <!-- Form -->
-                        <form class="row wow animate__animated animate__fadeInUp needs-validation" method="POST" action="email.php">
+                        <form class="row wow animate__animated animate__fadeInUp needs-validation" action="">
                             <div class="mb-3 col-md-6">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input name="name" type="text" class="form-control rounded-pill" id="name" placeholder="Nombre" required>
@@ -109,7 +119,7 @@
                                 <textarea name="message" class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje" required></textarea>
                             </div>
                             <div class="mb-3 col-12 text-center">
-                                <button class="form__btn btn" type="submit"> ENVIAR</button>
+                                <button class="btn" type="submit" data-bs-toggle="modal" data-bs-target="#redirectModal">ENVIAR</button>
                             </div>
                         </form>
                         <!-- End form -->
@@ -119,8 +129,8 @@
                         <p>Callao 960, San Miguel - Buenos Aires</p>
                         <address class="row justify-content-center align-items-center">
                             <div class="h-3 col-12 col-md-auto">
-                                <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img loading="lazy" class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
-                                <a href="https://www.facebook.com/groups/150442284984459"><img loading="lazy" class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
+                                <a href="https://instagram.com/gs_ntra_sra_de_fatima"><img loading="lazy" class="h-100" src="assets/img/instagram.webp" alt="Instagram"></a>
+                                <a href="https://www.facebook.com/groups/150442284984459"><img loading="lazy" class="h-100" src="assets/img/facebook.webp" alt="Facebook"></a>
                             </div>
                             <div class="h-auto col-12 col-md-auto deco-none text-white mt-3 mt-md-0">
                                 <a class="d-block" href="tel:+541123456789">+54 9 11 2345-6789</a>
@@ -129,7 +139,6 @@
                         </address>
                     </section>
                 </div>
-                <!--- Form --->
             </div>
         </section>
     </main>
@@ -142,19 +151,19 @@
             <p class="m-0">Desarrollado por Valeria Del Savio</p>
         </div>
         <div class="h-30 wow animate__animated animate__fadeInUp">
-            <a href="https://instagram.com/gs_ntra_sra_de_fatima" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/groups/150442284984459" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com/gs_ntra_sra_de_fatima" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/instagram.webp" alt="Instagram"></a>
+            <a href="https://www.facebook.com/groups/150442284984459" rel="nofollow" target="_blank"><img loading="lazy" class="h-100" src="assets/img/facebook.webp" alt="Facebook"></a>
         </div>
     </footer>
     <!--- End footer --->
 
     <!-- MODAL -->
     <!-- Log In -->
-    <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="logIn" tabindex="-1">
+    <div class="modal fade" id="logInModal" aria-hidden="true" aria-labelledby="logIn" tabindex="-1Register">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-white bg-blackTransparent blur shadow border-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="logIn">Iniciar Sesión</h5>
+                    <h5 class="modal-title" id="logIn">Iniciar Sesión</h5Register>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-footer justify-content-evenly">
@@ -165,11 +174,11 @@
                     <form class="row">
                         <div class="col-12 mb-3">
                             <label for="email" class="form-label">Correo electrónico</label>
-                            <input name="" type="email" class="form-control  rounded-pill" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control  rounded-pill" id="emailLogInRegister">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input name="" type="password" class="form-control  rounded-pill" id="password">
+                            <input type="password" class="form-control  rounded-pill" id="passwordLogInRegister">
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
@@ -180,11 +189,11 @@
         </div>
     </div>
     <!-- Register -->
-    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="register" tabindex="-1">
+    <div class="modal fade" id="registerModal" aria-hidden="true" aria-labelledby="register" tabindex="-1Register">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-white bg-blackTransparent blur shadow">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="register">Registrarse</h5>
+                    <h5 class="modal-title" id="register">Registrarse</h5Register>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-footer justify-content-evenly">
@@ -195,19 +204,19 @@
                     <form class="row">
                         <div class="col-12 col-md-6 mb-3">
                             <label for="first-name" class="form-label">Nombre</label>
-                            <input name="" type="text" class="form-control  rounded-pill" id="first-name">
+                            <input type="text" class="form-control  rounded-pill" id="first-nameRegister">
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                             <label for="last-name" class="form-label">Apellido</label>
-                            <input name="" type="text" class="form-control  rounded-pill" id="last-name">
+                            <input type="text" class="form-control  rounded-pill" id="last-nameRegister">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="form-label">Email</label>
-                            <input name="" type="email" class="form-control  rounded-pill" id="email">
+                            <input type="email" class="form-control  rounded-pill" id="emailRegister">
                         </div>
                         <div class="col-12 mb-3">
                             <label for="form-label">Contraseña</label>
-                            <input name="" type="password" class="form-control  rounded-pill" id="password">
+                            <input type="password" class="form-control  rounded-pill" id="passwordRegister">
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn btn-primary">Registrarme</button>
@@ -217,7 +226,26 @@
             </div>
         </div>
     </div>
-    
+    <!-- Redirect form -->
+    <div class="modal fade" id="redirectModal" aria-hidden="true" tabindex="-1" aria-labelledby="redirectModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white bg-blackTransparent blur shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="register">Formulario deshabilitado</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-evenly">
+                    <p>Disculpá, este formulario no está habilitado para completar y enviar correos. Pero no te preocupes, el resto del sitio funciona correctamente.</p>
+                    <p>Si querés probar esta funcionalidad, podés visitar el sitio subido a un servidor online siguiendo el botón de acá abajo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-gray" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn"><a href="https://demos.valeriadelsavio.com.ar/GSNSF-DELSAVIO/contacto.html" target="_blank">Ir al demo</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/wow.min.js"></script>
     <script>
