@@ -87,7 +87,7 @@
                 <div class="row text-white">
                     <section class="col-md">
                         <!-- Form -->
-                        <form class="row wow animate__animated animate__fadeInUp needs-validation" method="POST" action="email.php">
+                        <form class="row wow animate__animated animate__fadeInUp needs-validation" action="">
                             <div class="mb-3 col-md-6">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input name="name" type="text" class="form-control rounded-pill" id="name" placeholder="Nombre" required>
@@ -109,7 +109,7 @@
                                 <textarea name="message" class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje" required></textarea>
                             </div>
                             <div class="mb-3 col-12 text-center">
-                                <button class="form__btn btn" type="submit"> ENVIAR</button>
+                                <button class="btn" type="submit" data-bs-toggle="modal" data-bs-target="#redirectModal">ENVIAR</button>
                             </div>
                         </form>
                         <!-- End form -->
@@ -129,7 +129,6 @@
                         </address>
                     </section>
                 </div>
-                <!--- Form --->
             </div>
         </section>
     </main>
@@ -217,7 +216,26 @@
             </div>
         </div>
     </div>
-    
+    <!-- Redirect form -->
+    <div class="modal fade" id="redirectModal" aria-hidden="true" tabindex="-1" aria-labelledby="redirectModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-white bg-blackTransparent blur shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="register">Formulario deshabilitado</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body justify-content-evenly">
+                    <p>Disculpá, este formulario no está habilitado para completar y enviar correos. Pero no te preocupes, el resto del sitio funciona correctamente.</p>
+                    <p>Si querés probar esta funcionalidad, podés visitar el sitio subido a un servidor online siguiendo el botón de acá abajo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-gray" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn"><a href="https://demos.valeriadelsavio.com.ar/GSNSF-DELSAVIO/contacto.html" target="_blank">Ir al demo</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/wow.min.js"></script>
     <script>

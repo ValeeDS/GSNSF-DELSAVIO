@@ -111,10 +111,13 @@
   color: white;
   border: none; }
   .btn:hover {
-    transform: scale(1.1); }
+    transform: scale(1.1);
+    color: white; }
   .btn a {
     color: white;
     text-decoration: none; }
+  .btn-gray {
+    background-color: #6c7f84; }
 
 /* MY ELEMENTS */
 .bannerHeight {

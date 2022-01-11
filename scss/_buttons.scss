@@ -6,11 +6,16 @@
     border: none;
 
     &:hover{
-        transform: scale(1.1)
+        transform: scale(1.1);
+        color: white;
     }
 
     a{
         color: $white;
         text-decoration: none;
+    }
+
+    &-gray{
+        background-color: $gray;
     }
 }
