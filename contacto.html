@@ -97,7 +97,7 @@
                 <div class="row text-white">
                     <section class="col-md">
                         <!-- Form -->
-                        <form class="row wow animate__animated animate__fadeInUp needs-validation" method="POST" action="email.php">
+                        <form class="row wow animate__animated animate__fadeInUp needs-validation" action="">
                             <div class="mb-3 col-md-6">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input name="name" type="text" class="form-control rounded-pill" id="name" placeholder="Nombre" required>
@@ -119,7 +119,7 @@
                                 <textarea name="message" class="form-control br-20" id="message" rows="5" placeholder="Escribí acá tu mensaje" required></textarea>
                             </div>
                             <div class="mb-3 col-12 text-center">
-                                <button class="btn" type="submit">ENVIAR</button>
+                                <button class="btn" type="submit" data-bs-toggle="modal" data-bs-target="#redirectModal">ENVIAR</button>
                             </div>
                         </form>
                         <!-- End form -->
