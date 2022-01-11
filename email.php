@@ -18,7 +18,7 @@ try {
     $mail->Host       = 'mail.valeriadelsavio.com.ar';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'contacto@valeriadelsavio.com.ar';                     //SMTP username
-    $mail->Password   = 'WKkAJ+duXgtP';                         //SMTP password
+    $mail->Password   = '************';                         //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
